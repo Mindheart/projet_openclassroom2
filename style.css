@@ -1,0 +1,1999 @@
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("fonts/Raleway-Italic-VariableFont_wght.ttf");
+  src: url("fonts/Raleway-VariableFont_wght.ttf");
+}
+h1,
+h2,
+p {
+  font-family: "Raleway";
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  width: 95%;
+}
+.bloc_page {
+  display: flex;
+  flex-direction: column; /* Wrapper */
+  width: 100%;
+  align-items: center;
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.nav_hebergement_reservia {
+  /*========================== container nav hebergements reservia =======================*/
+  display: flex;
+  width: 100%;
+  justify-content: space-between; /*============Mettre un écart entre le logo Réservia et le lien hebergements==============*/
+}
+.nav_inscrire_activite {
+  display: flex;
+  width: 20%;
+  justify-content: flex-end; /*=====================container nav hebergements s'incrire================ */
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+}
+
+nav ul {
+  display: flex;
+  width: 100%; /*===========================container nav=============================*/
+  padding: 0px;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black; /*couleur text barre navigation*/
+}
+
+nav ul :hover {
+  color: blue;
+  text-decoration: overline;
+}
+.logo_reservia img {
+  width: 90px;
+  order: -1;
+  margin: 0px;
+  padding: 0px;
+}
+input {
+  width: 25%;
+}
+.group_button {
+  display: flex;
+}
+.group_button i {
+  width: 15px;
+  padding: 0px; /*marker*/
+}
+.group_button span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3%;
+  height: 49px;
+  margin: 0px; /*Emplacement marker*/
+  padding: 0px;
+  border: 1px solid black;
+  border-radius: 15px 0px 0px 15px;
+  background-color: #f2f2f2;
+}
+.button {
+  border-radius: 0px 10px 10px 0px;
+  background-color: #0065fc;
+  color: white;
+  width: 8%;
+}
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.filter_container {
+  display: flex;
+}
+.filter ul {
+  display: flex;
+  padding-left: 0px;
+  width: 100%;
+}
+.filter ul li {
+  list-style-type: none;
+}
+
+.filter ul li a {
+  text-decoration: none;
+  color: black; /*couleur text des filtres*/
+}
+.filter_title {
+  margin: 16px 14px 14px 0px;
+  font-weight: 700;
+}
+/*contour icones*/
+
+.span_filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px; /*circle icons flitres*/
+  border-radius: 30px;
+  background-color: #deebff;
+  /* margin-right: 13px; espacement icons and text */
+}
+filter p {
+  /*text filter*/
+  margin-left: 20px auto;
+}
+.economique {
+  display: flex;
+  border: 1px solid grey;
+  border-radius: 30px; /*bloc economique*/
+  margin-right: 15px;
+  width: 194px;
+  height: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+.economique i {
+  width: 18px;
+  height: 18px; /*Icones filter*/
+
+  color: #0065fc;
+}
+.familial {
+  display: flex;
+  border: 1px solid grey;
+  border-radius: 30px;
+  margin-right: 15px;
+  width: 152px;
+  height: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+.familial i {
+  width: 15px;
+  height: 21px; /*Icons filter*/
+
+  color: #0065fc;
+}
+.romantique {
+  display: flex;
+  border: 1px solid grey;
+  border-radius: 30px;
+  margin-right: 15px;
+  width: 184px;
+  height: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+.romantique i {
+  width: 19px;
+  height: 19px; /*Icons romantique*/
+
+  color: #0065fc;
+}
+.animaux {
+  display: flex;
+  border: 1px solid grey;
+  border-radius: 30px;
+  margin-right: 15px;
+  width: 242px;
+  height: 50px;
+  text-align: center;
+  text-justify: auto;
+  font-weight: bold;
+}
+.animaux i {
+  width: 18px;
+  height: 21px; /*Icones filter*/
+
+  color: #0065fc;
+}
+.economique p,
+.familial p,
+.romantique p,
+.animaux p {
+  margin-left: 19px;
+}
+
+.info {
+  display: flex; /*container info*/
+  align-items: center;
+}
+.info i {
+  color: #0065fc; /* icon info*/
+}
+.info .span_info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid grey; /* circle info */
+  border-radius: 30px;
+  margin: 0px 12px 0px 9px;
+  height: 16px;
+  width: 16px;
+}
+.info h1 {
+  font-size: 16px;
+}
+
+.bloc_page2 {
+  display: flex;
+  flex-direction: row;
+  width: 96%; /*Wrapper*/
+  justify-content: space-between;
+}
+/*===============================================Hébergement====================================*/
+.hebergement {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2; /*===============================background Hébergement==============================*/
+  border-radius: 20px;
+  width: 68%;
+}
+.hebergement h1 {
+  margin-left: 40px;
+}
+
+.hebergement_card {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /*==============================================Wrapper Hébergement===============================================*/
+}
+
+.tree_img {
+  display: flex;
+  width: 100%;
+  justify-content: center; /*=======================Container images Hébergement============================================*/
+  margin-bottom: 30px;
+  justify-content: space-evenly;
+  height: 240px;
+}
+figure {
+  margin: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px; /*===================================vignette hebergement============================================*/
+  width: 30%;
+  height: 100%;
+  background-color: white;
+  box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE===============================================*/
+  align-items: center;
+  justify-items: center;
+}
+.card_img1,
+.card_img2,
+.card_img3,
+.card_img4,
+.card_img5,
+.card_img6 {
+  display: flex; /*=========================Container images hebergement==============================================*/
+  flex-direction: column;
+  width: 100%;
+  height: 60%;
+  align-items: center;
+  justify-content: center;
+}
+
+.card_img1 .gift {
+  border-radius: 15px 15px 0px 0px;
+  width: 96%; /*===========================================Images Card Hébergement========================================== */
+  height: 88%;
+  background-image: url("images_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+  background-size: cover;
+}
+.card_img2 .gift {
+  border-radius: 15px 15px 0px 0px;
+  width: 96%; /*===========================================Images Card Hébergement================================================ */
+  height: 90%;
+  background-image: url("images_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+  background-size: cover;
+}
+.card_img3 .gift {
+  border-radius: 15px 15px 0px 0px;
+  width: 96%; /*===========================================Images Card Hébergement================================================= */
+  height: 90%;
+  background-image: url("images_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+  background-size: cover;
+}
+.card_img4 .gift {
+  border-radius: 15px 15px 0px 0px;
+  width: 96%; /*===========================================Images Card Hébergement=================== */
+  height: 90%;
+  background-image: url("images_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+  background-size: cover;
+}
+.card_img5 .gift {
+  border-radius: 15px 15px 0px 0px;
+  width: 96%; /*===========================================Images Card Hébergement=================== */
+  height: 90%;
+  background-image: url("images_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+  background-size: cover;
+}
+.card_img6 .gift {
+  border-radius: 15px 15px 0px 0px;
+  width: 96%; /*===========================================Images Card Hébergement=================== */
+  height: 90%;
+  background-image: url("images_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+  background-size: cover;
+}
+
+.container_hbgm_text_star {
+  width: 95%;
+  height: 30%;
+  font-size: 0.8em;
+  margin-left: 10px; /*===============================Container Texte hebergement======================= */
+  /* line-height: 30px; */
+  /* overflow-wrap: break-word; */
+}
+.container_hbgm_text_star p {
+  margin: 0px;
+}
+.container_hbgm_text_star h2 {
+  margin: 0px;
+}
+.afficher {
+  margin-left: 40px;
+}
+
+.group_star i {
+  color: #0065fc;
+}
+i:hover {
+  color: grey;
+}
+
+.card a {
+  text-decoration: none;
+  color: black; /*couleur texte vignette hébergement à Marseille */
+}
+/*======================================================ASIDE===========================================================================*/
+aside {
+  display: flex;
+  flex-direction: column;
+  order: 2;
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  width: 30%;
+  align-items: center; /*Pour alinger horizontalement*/
+}
+.populaire_card2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.card2 {
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px 15px 0px 0px;
+  border-radius: 20px; /*CARDS  SIDE BAR*/
+  margin-bottom: 33px; /*Espacement entre CARDS */
+  font-size: 12px;
+  background-color: white;
+  width: 90%;
+  height: 140px;
+  padding: 5px;
+  box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
+}
+.card2_img1,
+.card2_img2,
+.card2_img3 {
+  width: 40%; /*===========================Container images Aside=========================================*/
+  height: 100%;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+.card2_img1 .gift {
+  border-radius: 15px 0px 0px 15px;
+  width: 100%;
+  height: 100%; /*=====================================images Aside========================================*/
+  /* margin: 0px;
+  padding: 0px; */
+  background-image: url("images_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+  background-size: cover;
+}
+.card2_img2 .gift {
+  border-radius: 15px 0px 0px 15px;
+  width: 100%;
+  height: 100%; /*=====================================images Aside========================================*/
+  margin: 0px;
+  padding: 0px;
+  background-image: url("images_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+  background-size: cover;
+}
+.card2_img3 .gift {
+  border-radius: 15px 0px 0px 15px;
+  width: 100%;
+  height: 100%; /*=====================================images Aside========================================*/
+  margin: 0px;
+  padding: 0px;
+  background-image: url("images_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+  background-size: cover;
+}
+.container_text_star {
+  display: flex;
+  flex-direction: column;
+  width: 170px;
+  font-size: 0.8em;
+  margin-left: 20px;
+  flex-wrap: wrap;
+}
+
+.card2 a {
+  text-decoration: none; /* color text aside*/
+  color: black;
+}
+.text_aside {
+  text-align: right;
+  width: 150px;
+  order: 2;
+}
+
+.group_chart {
+  display: flex;
+  justify-content: space-between; /*espacement entre logo et text*/
+  width: 82%;
+}
+.group_chart img {
+  width: 20px;
+  height: 60px;
+}
+.section_activite h1 {
+  margin-left: 40px;
+}
+.section_activite {
+  margin-top: 50px; /*Espacement Activité  Hébergements */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.activités {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 500px; /*==========================================Container Activités=========================*/
+  border-radius: 20px;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.double_picture {
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+}
+.activite_1 {
+  border: 1px solid lightgrey;
+  border-radius: 15px 15px 15px 15px;
+  padding-bottom: 20px;
+  font-size: 10px;
+  width: 21%;
+  height: 465px;
+  box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
+}
+.activite_1 .gift {
+  border-radius: 15px 15px 0px 0px;
+  width: 100%;
+  height: 389px;
+  background-image: url("images_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+  background-size: cover;
+}
+
+.activite_2 {
+  border: 1px solid lightgrey;
+  border-radius: 20px 20px 20px 20px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  background-color: white;
+  font-size: 10px;
+  width: 100%;
+  box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
+}
+.activite_2 .gift {
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+  height: 181px;
+  background-image: url("images_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+  background-size: cover;
+}
+.activite_3 {
+  border: 1px solid lightgrey;
+  border-radius: 20px 20px 20px 20px;
+  padding-bottom: 20px;
+  font-size: 10px;
+  width: 100%;
+  box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
+}
+.activite_3 .gift {
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+  height: 109px;
+  background-image: url("images_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+  background-size: cover;
+}
+.activite_4 {
+  border: 1px solid lightgrey;
+  border-radius: 15px 15px 15px 15px;
+  padding-bottom: 20px;
+  font-size: 10px;
+  width: 21%;
+  height: 465px;
+  box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
+}
+.activite_4 .gift {
+  border-radius: 15px 15px 0px 0px;
+  width: 100%;
+  height: 389px;
+  background-image: url("images_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+  background-size: cover;
+}
+.activite_5 {
+  border: 1px solid lightgrey;
+  border-radius: 20px 20px 20px 20px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  font-size: 10px;
+  width: 100%;
+  box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
+}
+.activite_5 .gift {
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+  height: 140px;
+  background-image: url("images_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+  background-size: cover;
+}
+
+.activite_6 {
+  border: 1px solid lightgrey;
+  border-radius: 20px 20px 20px 20px;
+  padding-bottom: 20px;
+  font-size: 10px;
+  width: 100%;
+
+  box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
+}
+.activite_6 .gift {
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+  height: 153px;
+  background-image: url("images_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+  background-size: cover;
+}
+.activités h2 {
+  margin-left: 20px;
+  width: 200px;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 280px;
+  margin-top: 60px;
+  padding-top: 50px;
+  background-color: #f2f2f2;
+}
+.footer_section {
+  width: 34%;
+  font-size: x-large;
+  line-height: 45px;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0px;
+}
+footer ul li a {
+  text-decoration: none;
+  color: black; /*couleur texte footer */
+}
+@media screen and (max-width: 1150px) {
+  body {
+    width: 1150px;
+  }
+  .tree_img {
+    display: flex;
+    width: 100%;
+    height: 240px;
+    justify-content: center; /*=======================Container images Hébergement====================*/
+    justify-content: space-evenly;
+  }
+  figure {
+    margin: 0;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px; /*===================================vignette hebergement  =======================*/
+    width: 30%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
+    align-items: center;
+    justify-items: center;
+  }
+  .card_img1,
+  .card_img2,
+  .card_img3,
+  .card_img4,
+  .card_img5,
+  .card_img6 {
+    display: flex; /*=========================Container images hebergement==============================================*/
+    width: 100%;
+    height: 60%;
+    align-items: center;
+    justify-content: center;
+  }
+  .card_img1 .gift {
+    border-radius: 15px 15px 0px 0px;
+    width: 96%; /*===========================================Images Card Hébergement========================================== */
+    height: 90%;
+    /* background-image: url("images_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"); */
+    background-size: cover;
+  }
+  .card_img2 .gift {
+    border-radius: 15px 15px 0px 0px;
+    width: 96%; /*===========================================Images Card Hébergement================================================ */
+    height: 90%;
+    background-image: url("images_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+    background-size: cover;
+  }
+  .card_img3 .gift {
+    border-radius: 15px 15px 0px 0px;
+    width: 96%; /*===========================================Images Card Hébergement================================================= */
+    height: 90%;
+    background-image: url("images_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+    background-size: cover;
+  }
+  .card_img4 .gift {
+    border-radius: 15px 15px 0px 0px;
+    width: 96%; /*===========================================Images Card Hébergement=================== */
+    height: 90%;
+    /* background-image: url("images_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"); */
+    background-size: cover;
+  }
+  .card_img5 .gift {
+    border-radius: 15px 15px 0px 0px;
+    width: 96%; /*===========================================Images Card Hébergement=================== */
+    height: 90%;
+    /* background-image: url("images_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"); */
+    background-size: cover;
+  }
+  .card_img6 .gift {
+    border-radius: 15px 15px 0px 0px;
+    width: 96%; /*===========================================Images Card Hébergement=================== */
+    height: 90%;
+    /* background-image: url("images_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"); */
+    background-size: cover;
+  }
+  .container_hbgm_text_star {
+    width: 95%;
+    height: 30%;
+    font-size: 0.8em;
+    /* margin-left: 10px; */ /*===============================Container Texte hebergement======================= */
+    /* line-height: 30px; */
+    /* overflow-wrap: break-word; */
+  }
+  .container_hbgm_text_star p {
+    margin: 0px;
+  }
+  .container_hbgm_text_star h2 {
+    margin: 0px;
+  }
+  .afficher {
+    margin-left: 40px;
+  }
+  .populaire_card2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .card2 {
+    display: flex;
+    border-radius: 15px 15px 0px 0px;
+    border-radius: 20px; /*CARDS  SIDE BAR*/
+    margin-bottom: 33px; /*Espacement entre CARDS */
+    font-size: 12px;
+    background-color: white;
+    width: 90%;
+    padding: 5px;
+    box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
+  }
+  .card2_img1,
+  .card2_img2,
+  .card2_img3 {
+    width: 40%; /*===========================Container images Aside=========================================*/
+  }
+  .card2_img1 img {
+    border-radius: 15px 0px 0px 15px;
+    width: 100%;
+    height: 134px; /*=====================================images Aside========================================*/
+    margin: 0px;
+    padding: 0px;
+    /* background-image: url("images_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"); */
+    background-size: cover;
+  }
+  .card2_img2 img {
+    border-radius: 15px 0px 0px 15px;
+    width: 100%;
+    height: 134px; /*=====================================images Aside========================================*/
+    margin: 0px;
+    padding: 0px;
+    /* background-image: url("images_small/aw-creative-VGs8z60yT2c-unsplash.jpg"); */
+    background-size: cover;
+  }
+  .card2_img3 img {
+    border-radius: 15px 0px 0px 15px;
+    width: 100%;
+    height: 134px; /*=====================================images Aside========================================*/
+    margin: 0px;
+    padding: 0px;
+    /* background-image: url("images_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"); */
+    background-size: cover;
+  }
+  .container_text_star {
+    display: flex;
+    flex-direction: column;
+    width: 130px;
+    font-size: 0.8em;
+    margin-left: 20px;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  body {
+    width: 950px;
+  }
+
+  .bloc_page2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  input {
+    width: 25%;
+  }
+
+  .group_button {
+    display: flex;
+  }
+
+  .group_button i {
+    width: 15px; /*====================================marker===============================*/
+    padding: 0px;
+  }
+
+  .group_button span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 49px;
+    margin: 0px; /*===============================Emplacement marker========================*/
+    padding: 0px;
+    border: 1px solid black;
+    border-radius: 15px 0px 0px 15px;
+    background-color: #f2f2f2;
+  }
+
+  .button {
+    border-radius: 0px 10px 10px 0px;
+    background-color: #0065fc; /*===========================Button Recherche=======================*/
+    color: white;
+    width: 15%;
+  }
+
+  .filter_container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bloc_page {
+    padding: 0px;
+    width: 100%;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  .hebergement {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0px;
+    justify-content: space-evenly;
+  }
+
+  .hebergement_card {
+    width: 100%;
+  }
+
+  .tree_img {
+    display: flex;
+    width: 100%;
+    justify-content: center; /*=======================Container images Hébergement====================*/
+    margin-bottom: 30px;
+    justify-content: space-evenly;
+    height: 240px;
+  }
+
+  figure {
+    margin: 0;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px; /*===================================vignette hebergement  =======================*/
+    width: 30%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
+    align-items: center;
+    justify-items: center;
+  }
+
+  .card_img1,
+  .card_img2,
+  .card_img3,
+  .card_img4,
+  .card_img5,
+  .card_img6 {
+    display: flex; /*=========================Container images hebergement==============================================*/
+    width: 100%;
+    height: 60%;
+    align-items: center;
+    justify-content: center;
+  }
+  .card_img1 .gift {
+    border-radius: 15px 15px 0px 0px;
+    width: 96%; /*===========================================Images Card Hébergement========================================== */
+    height: 90%;
+    background-image: url("images_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    background-size: cover;
+  }
+  .card_img2 .gift {
+    border-radius: 15px 15px 0px 0px;
+    width: 96%; /*===========================================Images Card Hébergement================================================ */
+    height: 88%;
+    background-image: url("images_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+    background-size: cover;
+  }
+  .card_img3 .gif.gift {
+    border-radius: 15px 15px 0px 0px;
+    width: 96%; /*===========================================Images Card Hébergement================================================= */
+    height: 90%;
+    background-image: url("images_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+    background-size: cover;
+  }
+  .card_img4 .gift {
+    border-radius: 15px 15px 0px 0px;
+    width: 96%; /*===========================================Images Card Hébergement=================== */
+    height: 90%;
+    background-image: url("images_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+    background-size: cover;
+  }
+  .card_img5 .gift {
+    border-radius: 15px 15px 0px 0px;
+    width: 96%; /*===========================================Images Card Hébergement=================== */
+    height: 90%;
+    background-image: url("images_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+    background-size: cover;
+  }
+  .card_img6 .gift {
+    border-radius: 15px 15px 0px 0px;
+    width: 96%; /*===========================================Images Card Hébergement=================== */
+    height: 90%;
+    background-image: url("images_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+    background-size: cover;
+  }
+
+  .container_hbgm_text_star {
+    width: 95%;
+    height: 30%;
+    font-size: 0.8em;
+    /* margin-left: 10px; */ /*===============================Container Texte hebergement======================= */
+    /* line-height: 30px; */
+    /* overflow-wrap: break-word; */
+  }
+
+  .container_hbgm_text_star p {
+    margin: 0px;
+  }
+
+  .container_hbgm_text_star h2 {
+    margin: 0px;
+  }
+
+  .afficher {
+    margin-left: 40px;
+  }
+
+  aside {
+    display: flex;
+    margin-left: 0px;
+    width: 100%;
+    padding: 0px;
+    background-color: white;
+  }
+
+  .populaire_card2 {
+    display: flex;
+    flex-direction: column; /*==========================Container all cards aside===========================*/
+    width: 100%;
+    /* justify-content: space-evenly; */
+  }
+
+  .card2 {
+    display: flex; /*================================Conatainer CARD Aside=====================================*/
+    width: 80%;
+    height: 100%;
+  }
+
+  .card2_img1,
+  .card2_img2,
+  .card2_img3 {
+    /* display: flex; */
+    width: 60%;
+    height: 240px; /*===============================Container Images Aside======================================*/
+  }
+
+  /*==================================================Images Aside===================================================*/
+
+  .card2_img1 .gift {
+    border-radius: 15px 0px 0px 15px;
+    width: 50%;
+    height: 100%; /*=====================================images Aside========================================*/
+    margin: 0px;
+    padding: 0px;
+    background-image: url(images_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+    background-size: cover;
+  }
+
+  .card2_img2 .gift {
+    border-radius: 15px 0px 0px 15px;
+    width: 50%;
+    height: 100%; /*=====================================images Aside========================================*/
+    margin: 0px;
+    padding: 0px;
+    background-image: url(images_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
+    background-size: cover;
+  }
+
+  .card2_img3 .gift {
+    border-radius: 15px 0px 0px 15px;
+    width: 50%;
+    height: 100%; /*=====================================images Aside========================================*/
+    margin: 0px;
+    padding: 0px;
+    background-image: url(images_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+    background-size: cover;
+  }
+
+  .container_text_star {
+    display: flex;
+    flex-direction: column;
+    width: 199px;
+    margin-left: 20px;
+    font-size: 10px;
+  }
+
+  .group_chart {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin-left: 20px;
+  }
+
+  .section_activite {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+  }
+  .section_activite h1 {
+    margin: 0px; /*===============================text activite à marseille====================================*/
+    text-align: center;
+    width: 60%;
+  }
+  .activités {
+    /*==========================================Container Activités=========================*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .double_picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 98%;
+    margin-top: 40px;
+  }
+  .activite_1 {
+    border: 1px solid lightgrey;
+    border-radius: 20px 20px 20px 20px;
+    padding-bottom: 20px;
+    font-size: 10px;
+    width: 100%;
+    height: auto;
+    box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
+  }
+  .activite_1 .gift {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 400px;
+    background-image: url("images_small/reno-laithienne.jpg");
+    background-size: cover;
+  }
+  .activite_2 {
+    border: 1px solid lightgrey;
+    border-radius: 20px 20px 20px 20px;
+    margin-bottom: 40px;
+    background-color: white;
+    font-size: 10px;
+    width: 100%;
+    height: auto;
+    box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
+  }
+  .activite_2 .gift {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 400px;
+    background-image: url("images_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    background-size: cover;
+  }
+  .activite_3 {
+    border: 1px solid lightgrey;
+    border-radius: 20px 20px 20px 20px;
+    padding-bottom: 20px;
+    font-size: 10px;
+    width: 100%;
+    height: auto;
+    box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
+  }
+  .activite_3 .gift {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 400px;
+    background-image: url("images_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+    background-size: cover;
+  }
+  .activite_4 {
+    border: 1px solid lightgrey;
+    border-radius: 20px 20px 20px 20px;
+    padding-bottom: 20px;
+    font-size: 10px;
+    width: 100%;
+    height: auto;
+    box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
+    margin-top: 40px;
+  }
+  .activite_4 .gift {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 400px;
+    background-image: url("images_small/kilyan-sockalingum.jpg");
+    background-size: cover;
+  }
+  .activite_5 {
+    border: 1px solid lightgrey;
+    border-radius: 20px 20px 20px 20px;
+    font-size: 10px;
+    width: 100%;
+    height: auto;
+    box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
+  }
+  .activite_5 .gift {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 400px;
+    background-image: url("images_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    background-size: cover;
+  }
+
+  .activite_6 {
+    border: 1px solid lightgrey;
+    border-radius: 20px 20px 20px 20px;
+    font-size: 10px;
+    width: 100%;
+    height: auto;
+    box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
+  }
+  .activite_6 .gift {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 400px;
+    background-image: url("images_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+    background-size: cover;
+  }
+
+  section h1 {
+    margin: 0px;
+    text-align: center;
+    height: 60px; /*==============================spacing between text and images================== */
+  }
+
+  footer {
+    display: flex;
+    height: 360px;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    width: 768px;
+  }
+  .bloc_page2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  input {
+    width: 25%;
+  }
+  .group_button {
+    display: flex;
+  }
+  .group_button i {
+    width: 15px; /*====================================marker===============================*/
+    padding: 0px;
+  }
+  .group_button span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 49px;
+    margin: 0px; /*===============================Emplacement marker========================*/
+    padding: 0px;
+    border: 1px solid black;
+    border-radius: 15px 0px 0px 15px;
+    background-color: #f2f2f2;
+  }
+  .button {
+    border-radius: 0px 10px 10px 0px;
+    background-color: #0065fc; /*===========================Button Recherche=======================*/
+    color: white;
+    width: 15%;
+  }
+  .bloc_page {
+    padding: 0px;
+    width: 100%;
+  }
+  header {
+    width: 100%;
+  }
+
+  .hebergement {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0px;
+    justify-content: space-evenly;
+  }
+  .hebergement_card {
+    width: 100%;
+  }
+  .tree_img {
+    display: flex;
+    width: 100%;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 30%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 8px 8px 12px #aaa;
+    align-items: center;
+    justify-items: center;
+  }
+  .card_img {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+  }
+  .card_img img {
+    width: 95%;
+    height: 114px;
+  }
+
+  aside {
+    display: flex;
+    margin-left: 0px;
+    width: 100%;
+    padding: 0px;
+    background-color: white;
+  }
+  .populaire_card2 {
+    display: flex;
+    flex-direction: column; /*==========================Container all cards aside===========================*/
+    width: 100%;
+    /* justify-content: space-evenly; */
+  }
+  .card2 {
+    display: flex; /*================================Conatainer CARD Aside=====================================*/
+    width: 80%;
+  }
+  .card2_img1,
+  .card2_img2,
+  .card2_img3 {
+    /* display: flex; */
+    width: 60%;
+    height: 240px; /*===============================Container Images Aside======================================*/
+  }
+  .card2_img img {
+    /*==================================================Images Aside===================================================*/
+    width: 100%;
+  }
+  .card2_img1 img {
+    border-radius: 15px 0px 0px 15px;
+    width: 40%;
+    height: 100%; /*=====================================images Aside========================================*/
+    margin: 0px;
+    padding: 0px;
+    /* background-image: url(images_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg); */
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+  }
+  .card2_img2 img {
+    border-radius: 15px 0px 0px 15px;
+    width: 40%;
+    height: 100%; /*=====================================images Aside========================================*/
+    margin: 0px;
+    padding: 0px;
+    /* background-image: url(images_small/aw-creative-VGs8z60yT2c-unsplash.jpg); */
+    background-size: cover;
+  }
+  .card2_img3 img {
+    border-radius: 15px 0px 0px 15px;
+    width: 40%;
+    height: 100%; /*=====================================images Aside========================================*/
+    margin: 0px;
+    padding: 0px;
+    /* background-image: url(images_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg); */
+    background-size: cover;
+  }
+  /*
+  .card2 {
+    display: flex; ================================Conatainer CARD Aside=====================================
+    width: 30%;
+  }*/
+  /*
+  .card2_img {
+    display: flex;
+    width: 50%; ===============================Container Images Aside======================================
+  }*/
+  /*
+  .card2_img img {
+    ==================================================Images Aside===================================================
+    width: 100%;
+  }*/
+  .container_text_star {
+    display: flex;
+    flex-direction: column;
+    width: 199px;
+    margin-left: 20px;
+    font-size: 10px;
+  }
+  .group_chart {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin-left: 20px;
+  }
+
+  .section_activite {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+  }
+  .section_activite h1 {
+    margin: 0px; /*===============================text activite à marseille====================================*/
+    text-align: center;
+    width: 60%;
+  }
+  .activités {
+    /*==========================================Container Activités=========================*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .double_picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 98%;
+  }
+  .activite_1 {
+    border: 1px solid lightgrey;
+    border-radius: 20px 20px 20px 20px;
+    padding-bottom: 20px;
+    font-size: 10px;
+    width: 100%;
+    height: auto;
+    box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
+  }
+  .activite_1 .gift {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 400px;
+    background-image: url("images_small/reno-laithienne.jpg");
+    background-size: cover;
+  }
+  .activite_2 {
+    border: 1px solid lightgrey;
+    border-radius: 20px 20px 20px 20px;
+    margin-bottom: 40px;
+    background-color: white;
+    font-size: 10px;
+    width: 100%;
+    height: auto;
+    box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
+  }
+  .activite_2 .gift {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 400px;
+    background-image: url("images_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    background-size: cover;
+  }
+  .activite_3 {
+    border: 1px solid lightgrey;
+    border-radius: 20px 20px 20px 20px;
+    padding-bottom: 20px;
+    font-size: 10px;
+    width: 100%;
+    height: auto;
+    box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
+  }
+  .activite_3 .gift {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 400px;
+    background-image: url("images_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+    background-size: cover;
+  }
+  .activite_4 {
+    border: 1px solid lightgrey;
+    border-radius: 20px 20px 20px 20px;
+    padding-bottom: 20px;
+    font-size: 10px;
+    width: 100%;
+    height: auto;
+    box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
+  }
+  .activite_4 .gift {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 400px;
+    background-image: url("images_small/kilyan-sockalingum.jpg");
+    background-size: cover;
+  }
+  .activite_5 {
+    border: 1px solid lightgrey;
+    border-radius: 20px 20px 20px 20px;
+    font-size: 10px;
+    width: 100%;
+    height: auto;
+    box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
+  }
+  .activite_5 .gift {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 400px;
+    background-image: url("images_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    background-size: cover;
+  }
+
+  .activite_6 {
+    border: 1px solid lightgrey;
+    border-radius: 20px 20px 20px 20px;
+    font-size: 10px;
+    width: 100%;
+    height: auto;
+    box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
+  }
+  .activite_6 .gift {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 400px;
+    background-image: url("images_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+    background-size: cover;
+  }
+
+  section h1 {
+    margin: 0px;
+    text-align: center;
+    height: 60px; /*==============================spacing between text and images================== */
+  }
+  footer {
+    display: flex;
+    height: 360px;
+  }
+}
+
+@media all and (max-width: 425px) {
+  body {
+    display: flex;
+    width: 425px;
+    margin: 0px;
+    justify-content: center;
+  }
+  .bloc_page {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  header {
+    display: flex;
+    width: 100%;
+  }
+  /*=======================================================NAVIGATION=====================================*/
+  nav {
+    width: 100%;
+  }
+  .nav {
+    display: flex;
+    width: 100%;
+  }
+  nav ul {
+    display: flex;
+    padding: 0px;
+    display: flex;
+    width: 100%;
+  }
+  .nav_hebergement_reservia {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  .nav_inscrire_activite {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  .inscrire {
+    text-align: end;
+  }
+  .nav_hebergement_activite li a:hover {
+    color: blue;
+    text-decoration: underline;
+  }
+  .inscrire li a {
+    color: blue;
+  }
+  nav ul li {
+    margin-left: 30px;
+  }
+  .text1_header h1 {
+    text-align: center;
+  }
+  .text1_header P {
+    text-align: center;
+    font-size: 1.4em;
+  }
+  .bloc_page2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* height: 1301px; */
+    justify-content: center;
+  }
+  /*===================================================Barre de Recherche=======================================================*/
+  input {
+    width: 40%;
+  }
+  .group_button1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .group_button {
+    display: flex;
+    width: 95%;
+  }
+  .group_button i {
+    width: 15px; /*=======================================marker====================================================*/
+    padding: 0px;
+  }
+  .group_button span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 49px;
+    margin: 0px; /*====================================Emplacement marker==============================================*/
+    padding: 0px;
+    border: 1px solid black;
+    border-radius: 15px 0px 0px 15px;
+    background-color: #f2f2f2;
+  }
+  .button {
+    border-radius: 0px 10px 10px 0px;
+    background-color: #0065fc; /*===========================Button Recherche==========================================*/
+    color: white;
+    width: 20%;
+  }
+  /*=======================================================FILTER  BUTTON==============================================*/
+  .filter {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+  }
+  .filter ul {
+    display: flex; /*========================================Container filter==========================================*/
+    flex-direction: column;
+    width: 95%;
+  }
+  .filter .filter_title {
+    width: 80%;
+  }
+
+  .filter_container {
+    display: flex;
+    width: 80%;
+  }
+
+  .filter ul li {
+    list-style-type: none;
+  }
+
+  .filter ul li a {
+    text-decoration: none;
+    color: black; /*couleur text des filtres*/
+  }
+  .filter_title {
+    margin: 16px 14px 14px 0px;
+    font-weight: 700;
+  }
+
+  .span_filter {
+    /*=======================================contour icones=============================================*/
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px; /*circle icons flitres*/
+    border-radius: 30px;
+    background-color: #deebff;
+    /* margin-right: 13px; espacement icons and text */
+  }
+  filter p {
+    /*========================================================pargraphe filter========================================================*/
+    margin-left: 20px auto;
+  }
+  .economique {
+    display: flex;
+    border: 1px solid grey;
+    border-radius: 30px; /*bloc economique*/
+    margin-right: 15px;
+    width: 194px;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .economique i {
+    width: 18px;
+    height: 18px; /*Icones filter*/
+
+    color: #0065fc;
+  }
+  .familial {
+    display: flex;
+    border: 1px solid grey;
+    border-radius: 30px;
+    margin-right: 15px;
+    width: 152px;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .familial i {
+    width: 15px;
+    height: 21px; /*Icons filter*/
+
+    color: #0065fc;
+  }
+  .romantique {
+    display: flex;
+    border: 1px solid grey;
+    border-radius: 30px;
+    margin-right: 15px;
+    width: 184px;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .romantique i {
+    width: 19px;
+    height: 19px; /*Icons romantique*/
+
+    color: #0065fc;
+  }
+  .animaux {
+    display: flex;
+    border: 1px solid grey;
+    border-radius: 30px;
+    margin-right: 15px;
+    width: 242px;
+    height: 50px;
+    text-align: center;
+    text-justify: auto;
+    font-weight: bold;
+  }
+  .animaux i {
+    width: 18px;
+    height: 21px; /*Icones filter*/
+
+    color: #0065fc;
+  }
+  .info h1 {
+    font-size: 1.4em;
+  }
+  /*=====================================================HEBERGEMENT==================================================*/
+  .hebergement {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    justify-content: center;
+    /* margin-top: 40px; */
+  }
+  .tree_img {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /*=================================Container all cards============================= */
+    align-items: center; /*======================centrage card hebergement=======================*/
+    height: 900px;
+  }
+  .hebergement_card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .card {
+    display: flex;
+    width: 90%;
+    /* border: 1px solid grey; */
+    align-content: center;
+    height: 240px;
+    margin-bottom: 20px;
+    box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
+  }
+
+  .card_img1,
+  .card_img2,
+  .card_img3,
+  .card_img4,
+  .card_img5,
+  .card_img6 {
+    display: flex; /*=========================Container images hebergement==============================================*/
+    width: 100%;
+    height: 60%;
+    align-items: center;
+  }
+  .card_img1 .gift {
+    border-radius: 15px 15px 0px 0px;
+    width: 96%; /*===========================================Images Card Hébergement========================================== */
+    height: 90%;
+    background-image: url("images_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    background-size: cover;
+  }
+  .card_img2 .gift {
+    border-radius: 15px 15px 0px 0px;
+    width: 96%; /*===========================================Images Card Hébergement================================================ */
+    height: 88%;
+    background-image: url("images_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+    background-size: cover;
+  }
+  .card_img3 .gift {
+    border-radius: 15px 15px 0px 0px;
+    width: 96%; /*===========================================Images Card Hébergement================================================= */
+    height: 88%;
+    background-image: url("images_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+    background-size: cover;
+  }
+  .card_img4 .gift {
+    border-radius: 15px 15px 0px 0px;
+    width: 96%; /*===========================================Images Card Hébergement=================== */
+    height: 88%;
+    background-image: url("images_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+    background-size: cover;
+  }
+  .card_img5 .gift {
+    border-radius: 15px 15px 0px 0px;
+    width: 96%; /*===========================================Images Card Hébergement=================== */
+    height: 88%;
+    background-image: url("images_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+    background-size: cover;
+  }
+  .card_img6 .gift {
+    border-radius: 15px 15px 0px 0px;
+    width: 96%; /*===========================================Images Card Hébergement=================== */
+    height: 88%;
+    background-image: url("images_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+    background-size: cover;
+  }
+
+  /* .hebergement h1 {
+    background-color: white;
+    width: 90%;
+    text-align: left;
+    margin: 0px;
+  } */
+
+  .container_hbgm_text_star {
+    width: 95%;
+    height: 30%;
+    font-size: 0.8em;
+  }
+  .afficher {
+    display: flex;
+    width: 90%;
+    margin: 0px;
+  }
+  /*=================================================SIDE BAR=======================================================*/
+  aside {
+    display: flex;
+    order: -1;
+    width: 100%;
+    border-radius: 0px;
+    background-color: #f2f2f2;
+  }
+  .group_chart {
+    display: flex;
+    justify-content: space-between;
+    width: 88%;
+    margin-left: 0px;
+  }
+  .populaire_card2 {
+    /*======================container all  Cards side bar=========================*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .card2 {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 240px; /*================================container card==================================*/
+    justify-content: space-between;
+    box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
+  }
+  .card2_img1,
+  .card2_img2,
+  .card2_img3 {
+    width: 50%;
+    height: 100%; /*===========================Container images Aside=========================================*/
+  }
+  .card2_img1 .gift {
+    border-radius: 15px 0px 0px 15px;
+    width: 100%;
+    height: 100%; /*=====================================images Aside========================================*/
+    margin: 0px;
+    padding: 0px;
+    background-image: url("images_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+    background-size: cover;
+  }
+  .card2_img2 .gift {
+    border-radius: 15px 0px 0px 15px;
+    width: 100%;
+    height: 100%; /*=====================================images Aside========================================*/
+    margin: 0px;
+    padding: 0px;
+    background-image: url("images_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+    background-size: cover;
+  }
+  .card2_img3 .gift {
+    border-radius: 15px 0px 0px 15px;
+    width: 100%;
+    height: 100%; /*=====================================images Aside========================================*/
+    margin: 0px;
+    padding: 0px;
+    background-image: url("images_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+    background-size: cover;
+  }
+  .container_text_star {
+    display: flex;
+    flex-direction: column; /*=======================================Container Aside text======================*/
+    width: 150px;
+    margin-left: 20px;
+    flex-wrap: wrap;
+  }
+
+  .container_text {
+    width: 90%;
+  }
+  .card2 h2 {
+    /* display: flex; */
+    /* height: 24px; */
+    /* width: 100%; */
+  }
+  /*====================================================Activite================================================*/
+  .section_activite {
+    display: flex;
+    width: 100%;
+  }
+  .section_activite h1 {
+    margin: 0px; /*===============================text activite à marseille====================================*/
+    text-align: center;
+    width: 60%;
+  }
+  .activités {
+    display: flex;
+    width: 100%;
+    height: 1900px; /*==========================================Container Activités=========================*/
+    flex-direction: row;
+    border-radius: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .double_picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 98%;
+  }
+  .activite_1 {
+    border: 1px solid lightgrey;
+    border-radius: 20px 20px 20px 20px;
+    padding-bottom: 20px;
+    font-size: 10px;
+    width: 90%;
+    height: 240px;
+    box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
+  }
+  .activite_1 .gift {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 130px;
+    /* background-image: url("images_small/reno-laithienne.jpg"); */
+    /* background-size: cover; */
+  }
+  .activite_2 {
+    border: 1px solid lightgrey;
+    border-radius: 20px 20px 20px 20px;
+    margin-bottom: 40px;
+    background-color: white;
+    font-size: 10px;
+    width: 90%;
+    height: 240px;
+    box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
+  }
+  .activite_2 .gift {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 130px;
+    background-image: url("images_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    background-size: cover;
+  }
+  .activite_3 {
+    border: 1px solid lightgrey;
+    border-radius: 20px 20px 20px 20px;
+    padding-bottom: 20px;
+    font-size: 10px;
+    width: 90%;
+    height: 240px;
+    box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
+  }
+  .activite_3 .gift {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 130px;
+    background-image: url("images_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+    background-size: cover;
+  }
+  .activite_4 {
+    border: 1px solid lightgrey;
+    border-radius: 20px 20px 20px 20px;
+    /* padding-bottom: 20px; */
+    font-size: 10px;
+    width: 90%;
+    height: 240px;
+    box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
+  }
+  .activite_4 .gift {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 130px;
+    background-image: url("images_small/kilyan-sockalingum.jpg");
+    background-size: cover;
+  }
+  .activite_5 {
+    border: 1px solid lightgrey;
+    border-radius: 20px 20px 20px 20px;
+    font-size: 10px;
+    width: 90%;
+    height: 240px;
+    box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
+  }
+  .activite_5 .gift {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 130px;
+    background-image: url("images_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    background-size: cover;
+  }
+
+  .activite_6 {
+    border: 1px solid lightgrey;
+    border-radius: 20px 20px 20px 20px;
+    font-size: 10px;
+    width: 90%;
+    height: 240px;
+    box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
+  }
+  .activite_6 .gift {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 130px;
+    background-image: url("images_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+    background-size: cover;
+  }
+
+  /*======================================================FOOTER===========================================================================*/
+  footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 627px;
+  }
+  .footer_section {
+    width: 100%;
+  }
+}
