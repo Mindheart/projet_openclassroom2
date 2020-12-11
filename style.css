@@ -29,6 +29,7 @@ header {
   margin-bottom: 40px;
   width: 95%;
 }
+
 .bloc_page {
   display: flex;
   flex-direction: column; /* Wrapper */
@@ -37,44 +38,52 @@ header {
   /* margin-left: auto;
   margin-right: auto; */
 }
-
+nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* ===========================container nav=============================*/
+  /* padding: 0px; */
+}
 .nav {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  align-content: center;
+
   width: 100%;
 }
+
 .nav_hebergement_reservia {
   /*========================== container nav hebergements reservia =======================*/
   display: flex;
-  width: 100%;
+  width: 80%;
   justify-content: space-between; /*============Mettre un écart entre le logo Réservia et le lien hebergements==============*/
+  align-items: center; /*Pour centrer verticalement Réservia et Hébergement*/
 }
+
 .nav_inscrire_activite {
+  /* =====================container nav hebergements s'incrire========================================= */
   display: flex;
   width: 20%;
-  justify-content: flex-end; /*=====================container nav hebergements s'incrire================ */
+  height: 100px;
+  align-items: center;
   flex-direction: row-reverse;
   justify-content: space-evenly;
+  /* order: 3; */
 }
 
-nav ul {
-  display: flex;
-  width: 100%; /*===========================container nav=============================*/
-  padding: 0px;
-}
-
-nav ul li {
+/* nav ul li {
   list-style-type: none;
-}
-nav ul li a {
+} */
+nav a {
   text-decoration: none;
   color: black; /*couleur text barre navigation*/
 }
 
-nav ul :hover {
+nav :hover {
   color: blue;
   text-decoration: overline;
 }
+
 .logo_reservia img {
   width: 90px;
   order: -1;
