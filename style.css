@@ -28,7 +28,6 @@ body {
 header {
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px;
   width: 91.1%;
 }
 
@@ -81,6 +80,37 @@ nav :hover {
   color: #0065fc;
   /* text-decoration: overline; */
 }
+
+.nav .lien_heber:hover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /*=====================================================BORDER TOP======================================*/
+  border-top: 1px solid #0065fc;
+  height: 100px;
+}
+.nav .inscrire:hover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /*=====================================================BORDER TOP======================================*/
+  border-top: 1px solid #0065fc;
+  height: 100px;
+}
+.nav .lien_activite:hover {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*=====================================================BORDER TOP======================================*/
+  justify-content: center;
+  border-top: 1px solid #0065fc;
+  height: 100px;
+}
+/* .lien_heber,
+.inscrire,
+.lien_activite a:hover {
+  
+} */
+
 .lien_heber,
 .inscrire {
   color: #0065fc; /*=====================================================================================Color des lien ======================================================================*/
@@ -181,22 +211,19 @@ input {
   background-color: #deebff;
   /* margin-right: 13px; espacement icons and text */
 }
-econo p {
-  /*text filter*/
-  margin: 0px;
-}
+
 .economique {
   display: flex;
   border: 1px solid #deebff;
   border-radius: 30px; /*=======================================================container economique==================================================*/
   margin-right: 15px;
-  /* width: 40%; */
+  width: 200px;
   height: 50px;
-  /* text-align: center; */
+  text-align: center;
   font-weight: bold;
   cursor: pointer;
   align-items: center;
-  justify-content: center;
+
   font-size: 1.2em;
 }
 .economique i {
@@ -210,7 +237,7 @@ econo p {
   border: 1px solid #deebff;
   border-radius: 30px;
   margin-right: 15px; /*=======================================================container familial==================================================*/
-  /* width: 152px; */
+  width: 162px;
   height: 50px;
   text-align: center;
   font-weight: bold;
@@ -229,7 +256,7 @@ econo p {
   border: 1px solid #deebff;
   border-radius: 30px;
   margin-right: 15px; /*=======================================================container romantique==================================================*/
-  /* width: 184px; */
+  width: 194px;
   height: 50px;
   text-align: center;
   font-weight: bold;
@@ -248,7 +275,7 @@ econo p {
   border: 1px solid #deebff;
   border-radius: 30px;
   margin-right: 15px; /*=======================================================container animaux==================================================*/
-  /* width: 242px; */
+  width: 254px;
   height: 50px;
   text-align: center;
   text-justify: auto;
@@ -263,19 +290,32 @@ econo p {
 
   color: #0065fc;
 }
+
 .economique p,
 .familial p,
 .romantique p,
 .animaux p {
   margin-left: 19px;
 }
+.filter a :hover {
+  color: white;
+}
+.filter_container a:hover {
+  background: #0065fc;
+}
+.filter a:hover {
+  background: #0065fc;
+}
 
 .info {
   display: flex; /*==============================================container info==========================================================*/
+  flex-direction: row;
   align-items: center;
+  height: 100px;
 }
 .info i {
   color: #0065fc; /*======================================== icon info===============================================*/
+  display: flex;
 }
 .info .span_info {
   display: flex;
@@ -283,13 +323,15 @@ econo p {
   justify-content: center;
   border: 1px solid #f2f2f2; /* ============================circle info ===========================================*/
   border-radius: 30px;
-  margin: 20px 12px 0px 9px;
+  margin: 0px 10px 0px 9px;
   height: 30px;
   width: 30px;
 }
-.info h1 {
-  margin-top: 30px;
-  font-size: 14px;
+
+.info h2 {
+  margin: 0px;
+  /* margin-top: 30px; */
+  font-size: 1.6em;
 }
 
 .bloc_page2 {
@@ -429,7 +471,10 @@ figure.card {
   color: #0065fc;
 }
 i:hover {
-  color: grey;
+  color: #aaa;
+}
+.i i {
+  color: #aaa; /*=========================================star grey======================================*/
 }
 
 .card a {
@@ -708,7 +753,7 @@ figure.card2 {
 }
 .activités h2 {
   margin-left: 20px;
-  font-size: 1.7em;
+  font-size: 1.9em;
   color: black;
 }
 .activités a {
@@ -904,26 +949,26 @@ footer a {
     flex-wrap: wrap;
   }
   .container_text {
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
   .card2 h2 {
     /* display: flex; */
     /* height: 24px; */
     /* width: 100%; */
-    font-size: 2em;
+    /* font-size: 2em; */
     margin: 0.2em 0 0 0;
   }
   .card2 p {
-    margin: 0.3em 0 0 0;
+    margin: 0.2em 0 0 0;
     font-size: 1.6em;
   }
 
   .group_star {
-    padding-top: 50px;
+    padding-top: 40px;
   }
   .activités h2 {
     margin-left: 20px;
-    font-size: 1.5em;
+    font-size: 2em;
     color: black;
   }
 }
@@ -1093,7 +1138,7 @@ footer a {
     width: 95%;
     height: 30%;
     font-weight: 900;
-    font-size: 0.6em;
+    font-size: 0.9em;
     /* margin-left: 10px; */ /*===============================Container Texte hebergement======================= */
     line-height: 20px;
     /* overflow-wrap: break-word; */
@@ -2001,7 +2046,7 @@ footer a {
 
     color: #0065fc;
   }
-  .info h1 {
+  .info h2 {
     /* text-align: center; */
     font-size: 1.2em;
     width: 96%;
