@@ -8,6 +8,8 @@
 }
 h1,
 h2,
+h3,
+a,
 p {
   font-family: "Raleway";
 }
@@ -15,29 +17,26 @@ p {
 body {
   padding: 0px;
   margin: 0px;
-  display: flex;
-  flex-direction: column;
-  max-width: 1440px;
-  /* width: 100vw;*/
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
-  align-items: center;
 }
-
+.container .bloc_page {
+  /* Wrapper */
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
 header {
   display: flex;
   flex-direction: column;
   width: 91.1%;
+  margin: 0 auto;
 }
 
 .bloc_page {
   display: flex;
-  flex-direction: column; /* Wrapper */
+  flex-direction: column; 
   width: 100%;
   align-items: center;
-  /* margin-left: auto;
-  margin-right: auto; */
+
 }
 nav {
   display: flex;
@@ -49,7 +48,7 @@ nav {
   display: flex;
   flex-direction: row;
   align-content: center;
-
+  margin-top:10px;
   width: 100%;
 }
 
@@ -133,7 +132,12 @@ nav :hover {
 input {
   width: 18.4%;
   border: 1px solid #f2f2f2;
+  font-size: larger;
+  padding-left: 20px;
+
+
 }
+
 .group_button {
   display: flex;
   margin-bottom: 20px;
@@ -157,6 +161,7 @@ input {
   border-radius: 0px 15px 15px 0px;
   background-color: #0065fc;
   width: 11.5%;
+  font-size:larger;
 }
 .button i {
   border-radius: 15px;
@@ -200,6 +205,21 @@ input {
   font-weight: 700;
 }
 /*contour icones*/
+ .span_filter:hover{/*====================ANIMATION ICONS========================= */
+  transition: transform 2s;
+  transform: rotate(360deg);
+  
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -webkit-transition: transform 2s;
+  -moz-transition: transform 2s;
+  -ms-transition: transform 2s;
+  -o-transition: transform 2s;
+}
+
+
 
 .span_filter {
   display: flex;
@@ -217,7 +237,7 @@ input {
   border: 1px solid #deebff;
   border-radius: 30px; /*=======================================================container economique==================================================*/
   margin-right: 15px;
-  width: 200px;
+  width: 250px;
   height: 50px;
   text-align: center;
   font-weight: bold;
@@ -237,7 +257,7 @@ input {
   border: 1px solid #deebff;
   border-radius: 30px;
   margin-right: 15px; /*=======================================================container familial==================================================*/
-  width: 162px;
+  width: 200px;
   height: 50px;
   text-align: center;
   font-weight: bold;
@@ -256,7 +276,7 @@ input {
   border: 1px solid #deebff;
   border-radius: 30px;
   margin-right: 15px; /*=======================================================container romantique==================================================*/
-  width: 194px;
+  width: 230px;
   height: 50px;
   text-align: center;
   font-weight: bold;
@@ -275,7 +295,7 @@ input {
   border: 1px solid #deebff;
   border-radius: 30px;
   margin-right: 15px; /*=======================================================container animaux==================================================*/
-  width: 254px;
+  width: 300px;
   height: 50px;
   text-align: center;
   text-justify: auto;
@@ -291,10 +311,10 @@ input {
   color: #0065fc;
 }
 
-.economique p,
-.familial p,
-.romantique p,
-.animaux p {
+.economique h3,
+.familial h3,
+.romantique h3,
+.animaux h3 {
   margin-left: 19px;
 }
 .filter a :hover {
@@ -328,17 +348,18 @@ input {
   width: 30px;
 }
 
-.info h2 {
+.info p {
   margin: 0px;
   /* margin-top: 30px; */
-  font-size: 1.6em;
+  font-size: 1.2em;
+  
 }
 
 .bloc_page2 {
   display: flex;
-  flex-direction: row;
   width: 93.1%; /*Wrapper*/
   justify-content: space-around;
+  margin: 0 auto;
 }
 /*===============================================Hébergement====================================*/
 .hebergement {
@@ -426,24 +447,21 @@ figure.card {
   width: 97.3%; /*===========================================Images Card Hébergement=================== */
   height: 96%; /*114px*/
   object-fit: cover;
-  /* background-image: url("images_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
-  background-size: cover; */
+
 }
 .card_img5 img {
   border-radius: 15px 15px 0px 0px;
   width: 97.3%; /*===========================================Images Card Hébergement=================== */
   height: 96%; /*114px*/
   object-fit: cover;
-  /* background-image: url("images_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
-  background-size: cover; */
+ 
 }
 .card_img6 img {
   border-radius: 15px 15px 0px 0px;
   width: 97.3%; /*===========================================Images Card Hébergement=================== */
   height: 96%; /*114px*/
   object-fit: cover;
-  /* background-image: url("images_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
-  background-size: cover; */
+ 
 }
 
 .container_hbgm_text_star {
@@ -527,8 +545,7 @@ figure.card2 {
   object-fit: cover;
   /* margin: 0px;
   padding: 0px; */
-  /* background-image: url("images_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
-  background-size: cover; */
+ 
 }
 .card2_img2 img {
   border-radius: 15px 0px 0px 15px;
@@ -537,8 +554,7 @@ figure.card2 {
   margin: 0px;
   padding: 0px;
   object-fit: cover;
-  /* background-image: url("images_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
-  background-size: cover; */
+ 
 }
 .card2_img3 img {
   border-radius: 15px 0px 0px 15px;
@@ -547,8 +563,7 @@ figure.card2 {
   margin: 0px;
   padding: 0px;
   object-fit: cover;
-  /* background-image: url("images_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
-  background-size: cover; */
+ 
 }
 .container_text_star {
   display: flex;
@@ -588,7 +603,7 @@ figure.card2 {
 .group_chart {
   display: flex;
   justify-content: space-between; /*espacement entre logo et text*/
-  width: 82%;
+  width: 84%;
 }
 .group_chart img {
   width: 20px;
@@ -596,9 +611,11 @@ figure.card2 {
 }
 .title_activite {
   /*============================================================Activite=========================================================================*/
-  display: flex;
+  /* display: flex;
   width: 26%;
-  justify-content: center;
+  justify-content: center; */
+  margin-left: 40px;
+  
 }
 
 .section_activite {
@@ -640,11 +657,7 @@ figure.card2 {
   width: 100%;
   height: 389px;
   object-fit: cover;
-  /* background-image: url("images_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"); */
-  /* background-size: contain;
-  background-repeat: no-repeat; */
-  /* background-size: 100% 389px; */
-  /* margin: auto; */
+  
 }
 
 .activite_2 {
@@ -664,10 +677,7 @@ figure.card2 {
   width: 100%;
   height: 181px;
   object-fit: cover;
-  /* background-image: url("images_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-size: 100% 181px; */
+  
 }
 .activite_3 {
   border: 1px solid lightgrey;
@@ -684,10 +694,7 @@ figure.card2 {
   width: 100%;
   height: 109px;
   object-fit: cover;
-  /* background-image: url("images_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-size: 100% 109px; */
+
 }
 .activite_4 {
   border: 1px solid lightgrey;
@@ -704,10 +711,7 @@ figure.card2 {
   width: 100%;
   height: 389px;
   object-fit: cover;
-  /* background-image: url("images_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-size: 100% 389px; */
+ 
 }
 .activite_5 {
   border: 1px solid lightgrey;
@@ -725,10 +729,7 @@ figure.card2 {
   width: 100%;
   height: 140px;
   object-fit: cover;
-  /* background-image: url("images_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-size: 100% 140px; */
+ 
 }
 
 .activite_6 {
@@ -746,18 +747,18 @@ figure.card2 {
   width: 100%;
   height: 153px;
   object-fit: cover;
-  /* background-image: url("images_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-size: 100% 153px; */
+
 }
 .activités h2 {
-  margin-left: 20px;
+  margin: 0px;
   font-size: 1.9em;
   color: black;
 }
 .activités a {
   text-decoration: none;
+}
+.text_activite {
+  margin: 5px 0px 0px 20px;
 }
 /*============================================================FOOTER========================================================*/
 footer {
@@ -780,10 +781,47 @@ footer a {
   color: black; /*====================couleur texte footer========================================================== */
   font-weight: 400;
 }
+
+@media screen and (max-width: 1204px){
+  .nav_hebergement_reservia {
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_inscrire_activite {
+    width: 37%;
+}
+    .economique {
+    width: 230px;
+    /* margin-left: 59px; */
+}
+    .familial {
+    width: 176px;
+    /* margin-left: 59px; */
+}
+    .romantique {
+    width: 228px;
+    /* margin-left: 59px; */
+}
+  .animaux {
+    width: 290px;
+    /* margin-left: 59px; */
+}
+
+}
+
 @media screen and (max-width: 1150px) {
   body {
     width: 1150px;
   }
+  .button {
+  /* border-radius: 0px 15px 15px 0px;
+  background-color: #0065fc; */
+  width: 12.5%;
+  font-size:larger;
+}
+
   .tree_img {
     display: flex;
     width: 100%;
@@ -825,54 +863,51 @@ footer a {
     width: 97.3%; /*236px*/
     height: 96%; /*114px*/
     object-fit: cover;
-    /* background-image: url("images_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"); */
-    /* background-size: cover; */
+   
   }
   .card_img2 img {
     border-radius: 15px 15px 0px 0px;
     width: 97.3%; /*===========================================Images Card Hébergement================================================ */
     height: 96%; /*114px*/
     object-fit: cover;
-    /* background-image: url("images_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
-  background-size: cover; */
+  
   }
   .card_img3 img {
     border-radius: 15px 15px 0px 0px;
     width: 97.3%; /*===========================================Images Card Hébergement================================================= */
     height: 96%; /*114px*/
     object-fit: cover;
-    /* background-image: url("images_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
-  background-size: cover; */
+ 
   }
   .card_img4 img {
     border-radius: 15px 15px 0px 0px;
     width: 97.3%; /*===========================================Images Card Hébergement=================== */
     height: 96%; /*114px*/
     object-fit: cover;
-    /* background-image: url("images_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
-  background-size: cover; */
+ 
   }
   .card_img5 img {
     border-radius: 15px 15px 0px 0px;
     width: 97.3%; /*===========================================Images Card Hébergement=================== */
     height: 96%; /*114px*/
     object-fit: cover;
-    /* background-image: url("images_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
-  background-size: cover; */
+  
   }
   .card_img6 img {
     border-radius: 15px 15px 0px 0px;
     width: 97.3%; /*===========================================Images Card Hébergement=================== */
     height: 96%; /*114px*/
     object-fit: cover;
-    /* background-image: url("images_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
-  background-size: cover; */
+ 
   }
 
   .container_hbgm_text_star {
     width: 95%;
-    height: 30%;
-    font-size: 0.6em;
+    height: 39%;
+    font-size: 0.8em;
+    font-weight: 900;
+    margin-left: 10px;
+    line-height: 20px;
     /* margin-left: 10px; */ /*===============================Container Texte hebergement======================= */
     line-height: 20px;
     /* overflow-wrap: break-word; */
@@ -918,8 +953,7 @@ footer a {
     margin: 0px;
     padding: 0px;
     object-fit: cover;
-    /* background-image: url("images_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"); */
-    /* background-size: cover; */
+    
   }
   .card2_img2 img {
     border-radius: 15px 0px 0px 15px;
@@ -928,8 +962,7 @@ footer a {
     margin: 0px;
     padding: 0px;
     object-fit: cover;
-    /* background-image: url("images_small/aw-creative-VGs8z60yT2c-unsplash.jpg"); */
-    /* background-size: cover; */
+   
   }
   .card2_img3 img {
     border-radius: 15px 0px 0px 15px;
@@ -938,8 +971,7 @@ footer a {
     margin: 0px;
     padding: 0px;
     object-fit: cover;
-    /* background-image: url("images_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"); */
-    /* background-size: cover; */
+   
   }
   .container_text_star {
     display: flex;
@@ -952,10 +984,7 @@ footer a {
     font-size: 0.9em;
   }
   .card2 h2 {
-    /* display: flex; */
-    /* height: 24px; */
-    /* width: 100%; */
-    /* font-size: 2em; */
+   
     margin: 0.2em 0 0 0;
   }
   .card2 p {
@@ -987,6 +1016,10 @@ footer a {
   input {
     width: 25%;
   }
+  .animaux {
+    margin-left: 0px;
+}
+
 
   .group_button {
     display: flex;
@@ -1012,7 +1045,8 @@ footer a {
   .button {
     border-radius: 0px 10px 10px 0px; /*===========================Button Recherche=======================*/
     background-color: #0065fc;
-    width: 10%;
+    width: 15%;
+    font-size: larger;
   }
   .button span {
     width: 100%;
@@ -1090,16 +1124,14 @@ footer a {
     width: 97.3%; /*236px*/
     height: 96%; /*114px*/
     object-fit: cover;
-    /* background-image: url("images_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"); */
-    /* background-size: cover; */
+    
   }
   .card_img2 img {
     border-radius: 15px 15px 0px 0px;
     width: 97.3%; /*===========================================Images Card Hébergement================================================ */
     height: 96%; /*114px*/
     object-fit: cover;
-    /* background-image: url("images_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
-  background-size: cover; */
+    
   }
   .card_img3 img {
     border-radius: 15px 15px 0px 0px;
@@ -1114,34 +1146,31 @@ footer a {
     width: 97.3%; /*===========================================Images Card Hébergement=================== */
     height: 96%; /*114px*/
     object-fit: cover;
-    /* background-image: url("images_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
-  background-size: cover; */
+   
   }
   .card_img5 img {
     border-radius: 15px 15px 0px 0px;
     width: 97.3%; /*===========================================Images Card Hébergement=================== */
     height: 96%; /*114px*/
     object-fit: cover;
-    /* background-image: url("images_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
-  background-size: cover; */
+  
   }
   .card_img6 img {
     border-radius: 15px 15px 0px 0px;
     width: 97.3%; /*===========================================Images Card Hébergement=================== */
     height: 96%; /*114px*/
     object-fit: cover;
-    /* background-image: url("images_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
-  background-size: cover; */
+    
   }
 
   .container_hbgm_text_star {
     width: 95%;
-    height: 30%;
+    height: 50%;
     font-weight: 900;
     font-size: 0.9em;
     /* margin-left: 10px; */ /*===============================Container Texte hebergement======================= */
     line-height: 20px;
-    /* overflow-wrap: break-word; */
+    
   }
 
   .container_hbgm_text_star p {
@@ -1199,8 +1228,7 @@ footer a {
     margin: 0px;
     padding: 0px;
     object-fit: cover;
-    /* background-image: url(images_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
-    background-size: cover; */
+    
   }
 
   .card2_img2 img {
@@ -1210,8 +1238,7 @@ footer a {
     margin: 0px;
     padding: 0px;
     object-fit: cover;
-    /* background-image: url(images_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
-    background-size: cover; */
+    
   }
 
   .card2_img3 img {
@@ -1221,8 +1248,7 @@ footer a {
     margin: 0px;
     padding: 0px;
     object-fit: cover;
-    /* background-image: url(images_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg); */
-    /* background-size: cover; */
+   
   }
 
   .container_text_star {
@@ -1233,9 +1259,7 @@ footer a {
     font-size: 10px;
   }
   .card2 h2 {
-    /* display: flex; */
-    /* height: 24px; */
-    /* width: 100%; */
+   
     font-size: 3em;
     /* margin: 0.2em 0 0 0; */
   }
@@ -1252,8 +1276,8 @@ footer a {
   .group_chart {
     display: flex;
     justify-content: space-between;
-    width: 78%;
-    margin-left: 20px;
+    width: 88%;
+    
   }
 
   .section_activite {
@@ -1271,17 +1295,20 @@ footer a {
 
   .title_activite {
     /*===============================text activite à marseille====================================*/
-    display: flex;
-    width: 100%;
+    /* display: flex;
+    width: 100%; */
+    padding-bottom: 88px;
   }
   .title_activite h2 {
     width: 80%;
   }
   .title_activite {
     /*============================================================Activite=========================================================================*/
-    display: flex;
+    /* display: flex;
     width: 100%;
-    justify-content: center;
+    justify-content: center; */
+    padding-bottom: 88px;
+    margin-left: 40px;
   }
 
   .section_activite {
@@ -1296,7 +1323,7 @@ footer a {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 3200px; /*========================================================================Container Activités=================================================================*/
+    height: 3076px; /*========================================================================Container Activités=================================================================*/
     border-radius: 20px;
     justify-content: center;
     align-items: center;
@@ -1317,7 +1344,7 @@ footer a {
     border: 1px solid lightgrey;
     border-radius: 20px 20px 20px 20px;
     padding-bottom: 20px;
-    font-size: 10px;
+    font-size: 1em;
     width: 85%;
     height: 16%;
     box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
@@ -1329,10 +1356,7 @@ footer a {
     width: 100%;
     height: 90%;
     object-fit: cover;
-    /* background-image: url("images_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-size: 100% 90%; */
+   
   }
 
   .activite_2 {
@@ -1341,7 +1365,7 @@ footer a {
 
     padding-bottom: 20px;
     background-color: white;
-    font-size: 10px;
+    font-size: 1em;
     width: 85%;
     height: 50%;
     box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
@@ -1353,16 +1377,13 @@ footer a {
     width: 100%;
     height: 90%;
     object-fit: cover;
-    /* background-image: url("images_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-size: 100% 90%; */
+   
   }
   .activite_3 {
     border: 1px solid lightgrey;
     border-radius: 20px 20px 20px 20px;
     padding-bottom: 20px;
-    font-size: 10px;
+    font-size: 1em;
     width: 85%;
     height: 50%;
     box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
@@ -1374,16 +1395,13 @@ footer a {
     width: 100%;
     height: 90%;
     object-fit: cover;
-    /* background-image: url("images_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-size: 100% 80%; */
+   
   }
   .activite_4 {
     border: 1px solid lightgrey;
     border-radius: 20px 20px 20px 20px;
     padding-bottom: 20px;
-    font-size: 10px;
+    font-size: 1em;
     width: 85%;
     height: 16%;
     box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
@@ -1395,17 +1413,14 @@ footer a {
     width: 100%;
     height: 90%;
     object-fit: cover;
-    /* background-image: url("images_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-size: 100% 90%; */
+  
   }
   .activite_5 {
     border: 1px solid lightgrey;
     border-radius: 20px 20px 20px 20px;
     margin-bottom: 40px;
     padding-bottom: 20px;
-    font-size: 10px;
+    font-size: 1em;
     width: 85%;
     height: 50%;
     box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
@@ -1416,17 +1431,14 @@ footer a {
     width: 100%;
     height: 90%;
     object-fit: cover;
-    /* background-image: url("images_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-size: 100% 90%; */
+   
   }
 
   .activite_6 {
     border: 1px solid lightgrey;
     border-radius: 20px 20px 20px 20px;
     padding-bottom: 20px;
-    font-size: 10px;
+    font-size: 1em;
     width: 85%;
     height: 50%;
     box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
@@ -1437,10 +1449,7 @@ footer a {
     width: 100%;
     height: 90%;
     object-fit: cover;
-    /* background-image: url("images_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-size: 100% 90%; */
+   
   }
 
   section h1 {
@@ -1463,8 +1472,37 @@ footer a {
     flex-direction: column;
     width: 100%;
   }
+  .nav_hebergement_reservia {
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_inscrire_activite {
+    
+    width: 37%;
+
+}
+.filter h3{
+  margin-left: 10px;
+}
+.economique {
+    width: 194px;
+    font-size: 1em;
+}
+.familial{
+  font-size: 1em;
+}
+.romantique {
+    width: 194px;
+    font-size: 1em;
+}
+.animaux {
+    width: 241px;
+    font-size: 1em;
+}
   input {
-    width: 25%;
+    width: 35%;
   }
   .group_button {
     display: flex;
@@ -1488,7 +1526,8 @@ footer a {
   .button {
     border-radius: 0px 10px 10px 0px; /*===========================Button Recherche=======================*/
     background-color: #0065fc;
-    width: 10%;
+    width: 20.5%;
+    font-size: larger;
   }
   .button span {
     width: 100%;
@@ -1572,9 +1611,8 @@ footer a {
     height: 100%; /*=====================================images Aside========================================*/
     margin: 0px;
     padding: 0px;
-    /* background-image: url(images_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg); */
     object-fit: cover;
-    /* background-repeat: no-repeat; */
+   
   }
   .card2_img2 img {
     border-radius: 15px 0px 0px 15px;
@@ -1582,7 +1620,6 @@ footer a {
     height: 100%; /*=====================================images Aside========================================*/
     margin: 0px;
     padding: 0px;
-    /* background-image: url(images_small/aw-creative-VGs8z60yT2c-unsplash.jpg); */
     object-fit: cover;
   }
   .card2_img3 img {
@@ -1591,7 +1628,6 @@ footer a {
     height: 100%; /*=====================================images Aside========================================*/
     margin: 0px;
     padding: 0px;
-    /* background-image: url(images_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg); */
     object-fit: cover;
   }
   /*
@@ -1612,14 +1648,14 @@ footer a {
   .container_text_star {
     display: flex;
     flex-direction: column;
-    width: 199px;
-    margin-left: 20px;
+    margin-left: 100px;
+    width: 60%;
     font-size: 10px;
   }
   .group_chart {
     display: flex;
     justify-content: space-between;
-    width: 78%;
+    width: 88%;
   }
 
   .section_activite {
@@ -1640,7 +1676,7 @@ footer a {
     flex-direction: column;
     margin-top: 50px; /*Espacement Activité  Hébergements */
     width: 100%;
-    height: 3200px;
+    height: 3320px;
     /* margin-bottom: 100px; */
   }
   .activités {
@@ -1668,7 +1704,7 @@ footer a {
     border: 1px solid lightgrey;
     border-radius: 20px 20px 20px 20px;
     padding-bottom: 20px;
-    font-size: 10px;
+    font-size: 1em;
     width: 90%;
     height: 16%;
     box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
@@ -1691,7 +1727,7 @@ footer a {
 
     padding-bottom: 20px;
     background-color: white;
-    font-size: 10px;
+    font-size: 1em;
     width: 90%;
     height: 50%;
     box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
@@ -1703,16 +1739,12 @@ footer a {
     width: 100%;
     height: 90%;
     object-fit: cover;
-    /* background-image: url("images_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-size: 100% 90%; */
   }
   .activite_3 {
     border: 1px solid lightgrey;
     border-radius: 20px 20px 20px 20px;
     padding-bottom: 20px;
-    font-size: 10px;
+    font-size: 1em;
     width: 90%;
     height: 50%;
     box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
@@ -1725,16 +1757,12 @@ footer a {
     height: 90%;
     object-fit: cover;
 
-    /* background-image: url("images_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-size: 100% 80%; */
   }
   .activite_4 {
     border: 1px solid lightgrey;
     border-radius: 20px 20px 20px 20px;
     padding-bottom: 20px;
-    font-size: 10px;
+    font-size: 1em;
     width: 90%;
     height: 16%;
     box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
@@ -1746,17 +1774,14 @@ footer a {
     width: 100%;
     height: 90%;
     object-fit: cover;
-    /* background-image: url("images_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-size: 100% 90%; */
+ 
   }
   .activite_5 {
     border: 1px solid lightgrey;
     border-radius: 20px 20px 20px 20px;
     /* margin-bottom: 40px; */
     padding-bottom: 20px;
-    font-size: 10px;
+    font-size: 1em;
     width: 90%;
     height: 50%;
     box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
@@ -1767,17 +1792,14 @@ footer a {
     width: 100%;
     height: 90%;
     object-fit: cover;
-    /* background-image: url("images_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-size: 100% 90%; */
+ 
   }
 
   .activite_6 {
     border: 1px solid lightgrey;
     border-radius: 20px 20px 20px 20px;
     padding-bottom: 20px;
-    font-size: 10px;
+    font-size: 1em;
     width: 90%;
     height: 50%;
     box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
@@ -1788,10 +1810,7 @@ footer a {
     width: 100%;
     height: 90%;
     object-fit: cover;
-    /* background-image: url("images_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-size: 100% 90%; */
+   
   }
 
   section h1 {
@@ -1807,13 +1826,13 @@ footer a {
 
 @media all and (max-width: 425px) {
   body {
-    display: flex;
-    width: 425px;
+    
+    width: 425px; */
     margin: 0px;
-    justify-content: center;
+    /* justify-content: center; */
   }
   .bloc_page {
-    display: flex;
+    
     width: 100%;
     justify-content: center;
   }
@@ -1932,10 +1951,8 @@ footer a {
 
   /*=======================================================FILTER  BUTTON==============================================*/
   .filter {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-left: 25px;
+
+    margin-left: 5px;
     width: 90%;
   }
   .filter ul {
@@ -1982,38 +1999,31 @@ footer a {
     /* margin-left: 20px auto; */
   }
   .economique {
-    display: flex;
-    border: 1px solid #f2f2f2;
-    border-radius: 30px; /*bloc economique*/
-    margin-right: 15px;
-    /* width: 194px; */
-    height: 50px;
+   
+    width: 213px;
+    /* height: 50px;
     text-align: center;
     font-weight: bold;
   }
-  .economique i {
-    width: 18px;
-    height: 18px; /*Icones filter*/
+  .economique i {/*Icones filter*/
+    /* width: 18px;
+    height: 18px; 
 
-    color: #0065fc;
+    color: #0065fc; */
   }
   .familial {
-    display: flex;
-    border: 1px solid #f2f2f2;
-    border-radius: 30px;
-    margin-right: 15px;
-    width: 152px;
-    height: 50px;
-    text-align: center;
-    font-weight: bold;
-  }
-  .familial i {
-    width: 15px;
-    height: 21px; /*Icons filter*/
 
-    color: #0065fc;
+    width: 165px;
+    height: 50px;
+    
   }
-  .romantique {
+  .familial i {/*Icons filter*/
+
+    /* width: 15px;
+    height: 21px; 
+    color: #0065fc; */
+  }
+  /* .romantique {
     display: flex;
     border: 1px solid #f2f2f2;
     border-radius: 30px;
@@ -2022,15 +2032,15 @@ footer a {
     height: 50px;
     text-align: center;
     font-weight: bold;
-  }
-  .romantique i {
-    width: 19px;
-    height: 19px; /*Icons romantique*/
+  } */
+  .romantique i {/*Icons romantique*/
+    /* width: 19px;
+    height: 19px; 
 
-    color: #0065fc;
+    color: #0065fc; */
   }
   .animaux {
-    display: flex;
+    /* display: flex;
     border: 1px solid #f2f2f2;
     border-radius: 30px;
     margin-right: 15px;
@@ -2038,17 +2048,18 @@ footer a {
     height: 50px;
     text-align: center;
     text-justify: auto;
-    font-weight: bold;
+    font-weight: bold; */
+    margin-left: 0;
   }
-  .animaux i {
-    width: 18px;
-    height: 21px; /*Icones filter*/
+  .animaux i {/*Icones filter*/
+    /* width: 18px;
+    height: 21px; 
 
-    color: #0065fc;
+    color: #0065fc; */
   }
-  .info h2 {
-    /* text-align: center; */
-    font-size: 1.2em;
+  .info p {
+    
+    font-size: 0.9em;
     width: 96%;
   }
   /*=====================================================HEBERGEMENT==================================================*/
@@ -2058,7 +2069,7 @@ footer a {
     width: 100%;
     background-color: white;
     justify-content: center;
-    margin-top: 40px;
+    
   }
   .hebergement h2 {
     display: block;
@@ -2082,7 +2093,7 @@ footer a {
     display: flex;
     width: 90%;
     align-content: center;
-    height: 199px;
+    height: 214px;
     box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
     cursor: pointer;
     padding: 5px;
@@ -2106,48 +2117,42 @@ footer a {
     width: 98.8%; /*236px*/
     height: 96%; /*114px*/
     object-fit: cover;
-    /* background-image: url("images_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"); */
-    /* background-size: cover; */
+  
   }
   .card_img2 img {
     border-radius: 15px 15px 0px 0px;
     width: 98.8%; /*===========================================Images Card Hébergement================================================ */
     height: 96%; /*114px*/
     object-fit: cover;
-    /* background-image: url("images_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
-  background-size: cover; */
+  
   }
   .card_img3 img {
     border-radius: 15px 15px 0px 0px;
     width: 98.8%; /*===========================================Images Card Hébergement================================================= */
     height: 96%; /*114px*/
     object-fit: cover;
-    /* background-image: url("images_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
-  background-size: cover; */
+
   }
   .card_img4 img {
     border-radius: 15px 15px 0px 0px;
     width: 98.8%; /*===========================================Images Card Hébergement=================== */
     height: 96%; /*114px*/
     object-fit: cover;
-    /* background-image: url("images_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
-  background-size: cover; */
+  
   }
   .card_img5 img {
     border-radius: 15px 15px 0px 0px;
     width: 98.8%; /*===========================================Images Card Hébergement=================== */
     height: 96%; /*114px*/
     object-fit: cover;
-    /* background-image: url("images_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
-  background-size: cover; */
+  
   }
   .card_img6 img {
     border-radius: 15px 15px 0px 0px;
     width: 98.8%; /*===========================================Images Card Hébergement=================== */
     height: 96%; /*114px*/
     object-fit: cover;
-    /* background-image: url("images_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
-  background-size: cover; */
+  
   }
 
   /* .hebergement h1 {
@@ -2160,9 +2165,17 @@ footer a {
   .container_hbgm_text_star {
     width: 95%;
     height: 30%;
-    font-size: 0.8em;
+    /* font-size: 0.8em; */
     font-weight: 900;
   }
+  .container_hbgm_text_star h2 {
+    font-size:26px ;
+    margin: 0px;
+}
+.container_hbgm_text_star p {
+    font-size: 20px;
+    margin: 0px;
+}
   .afficher {
     display: block;
     width: 82%;
@@ -2173,7 +2186,7 @@ footer a {
     display: flex;
     order: -1;
     width: 100%;
-    height: 590px;
+    height: 620px;
     border-radius: 0px;
     background-color: #f2f2f2;
   }
@@ -2213,8 +2226,7 @@ footer a {
     margin: 0px;
     padding: 0px;
     object-fit: cover;
-    /* background-image: url("images_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
-    background-size: cover; */
+    
   }
   .card2_img2 img {
     border-radius: 15px 0px 0px 15px;
@@ -2223,8 +2235,7 @@ footer a {
     margin: 0px;
     padding: 0px;
     object-fit: cover;
-    /* background-image: url("images_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
-    background-size: cover; */
+   
   }
   .card2_img3 img {
     border-radius: 15px 0px 0px 15px;
@@ -2233,8 +2244,7 @@ footer a {
     margin: 0px;
     padding: 0px;
     object-fit: cover;
-    /* background-image: url("images_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
-    background-size: cover; */
+    
   }
   .container_text_star {
     display: flex;
@@ -2245,7 +2255,7 @@ footer a {
     margin-top: 0;
   }
   .container_text p {
-    font-size: larger;
+    font-size: 20px;
   }
   .container_text h2 {
     font-size: medium;
@@ -2254,7 +2264,7 @@ footer a {
 
   .group_star {
     height: 50%;
-    padding-top: 11px;
+    padding-top: 40px;
     /* border: 1px solid black; */
   }
   /* .group_star_au_coeur {
@@ -2262,18 +2272,18 @@ footer a {
     padding-top: 30px;
     color: #0065fc;
   } */
-  .container_text1 {
+  /* .container_text1 {
     width: 90%;
     height: 40%;
 
     margin: 0;
-  }
+  } */
   .container_text1 h2 {
     margin: 0;
   }
   .container_text {
     /* border: 1px solid black; */
-    width: 90%;
+    width: 89%;
     height: 50%;
 
     margin: 0;
@@ -2304,7 +2314,7 @@ footer a {
     flex-direction: column;
     margin-top: 50px; /*Espacement Activité  Hébergements */
     width: 100%;
-    height: 1500px;
+    height: 1590px;
     margin-bottom: 100px;
   }
   .activités {
@@ -2343,10 +2353,7 @@ footer a {
     width: 100%;
     height: 90%;
     object-fit: cover;
-    /* background-image: url("images_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"); */
-    /* background-size: contain;
-    background-repeat: no-repeat;
-    background-size: 100% 90%; */
+
   }
 
   .activite_2 {
@@ -2366,10 +2373,7 @@ footer a {
     width: 100%;
     height: 90%;
     object-fit: cover;
-    /* background-image: url("images_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"); */
-    /* background-size: contain;
-    background-repeat: no-repeat;
-    background-size: 100% 90%; */
+
   }
   .activite_3 {
     border: 1px solid lightgrey;
@@ -2386,10 +2390,7 @@ footer a {
     width: 100%;
     height: 90%;
     object-fit: cover;
-    /* background-image: url("images_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-size: 100% 90%; */
+
   }
   .activite_4 {
     border: 1px solid lightgrey;
@@ -2406,10 +2407,7 @@ footer a {
     width: 100%;
     height: 90%;
     object-fit: cover;
-    /* background-image: url("images_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-size: 100% 90%; */
+
   }
   .activite_5 {
     border: 1px solid lightgrey;
@@ -2426,10 +2424,7 @@ footer a {
     width: 100%;
     height: 90%;
     object-fit: cover;
-    /* background-image: url("images_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-size: 100% 90%; */
+
   }
 
   .activite_6 {
@@ -2447,10 +2442,7 @@ footer a {
     width: 100%;
     height: 90%;
     object-fit: cover;
-    /* background-image: url("images_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-size: 100% 90%; */
+
   }
 
   /*======================================================FOOTER===========================================================================*/
