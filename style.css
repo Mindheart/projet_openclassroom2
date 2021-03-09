@@ -66,7 +66,6 @@ nav {
   display: flex;
   align-items: center;
   width: 20%;
-  /* flex-direction: row-reverse; */
   justify-content: space-evenly;
   height: 100px;
 }
@@ -185,19 +184,7 @@ label {
 .filter_container {
   display: flex;
 }
-.filter ul {
-  display: flex;
-  padding-left: 0px;
-  width: 100%;
-}
-.filter ul li {
-  list-style-type: none;
-}
 
-.filter ul li a {
-  text-decoration: none;
-  color: black; /*couleur text des filtres*/
-}
 .filter_title {
   margin: 16px 14px 14px 0px;
   font-weight: 700;
@@ -539,6 +526,7 @@ figure.card2 {
 .card2_img1,
 .card2_img2,
 .card2_img3 {
+  display: flex;
   width: 34.6%; /*===========================Container images Aside=========================================*/
   height: 100%;
   /* align-items: center; */
@@ -571,10 +559,10 @@ figure.card2 {
 .container_text_star {
   display: flex;
   flex-direction: column;
-  width: 170px;
+  width: 200px;
   font-size: 0.8em;
   margin-left: 20px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 .group_star {
   color: #0065fc; /*============================================================Container start Aside==================================================*/
@@ -585,8 +573,8 @@ figure.card2 {
   /* display: flex; */
   /* height: 24px; */
   /* width: 100%; */
-  font-size: 2em;
-  margin: 0.2em 0 0 0;
+  font-size: 1.7em;
+  margin: 0.6em 0 0 0;
 }
 .card2 p {
   margin: 0.3em 0 0 0;
@@ -809,29 +797,17 @@ footer a {
     /* font-size: larger; */
   }
 
-  .tree_img {
+  /* .tree_img {
     display: flex;
     width: 100%;
     height: 199px;
-    justify-content: center; /*=======================Container images Hébergement====================*/
+    justify-content: center; 
     justify-content: space-evenly;
-  }
+  } */
   figure {
     margin: 0;
   }
 
-  figure.card {
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px; /*===================================vignette hebergement============================================*/
-    width: 28.9%;
-    height: 100%;
-    background-color: white;
-    box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE===============================================*/
-    align-items: center;
-    justify-items: center;
-    cursor: pointer;
-  }
   .card_img1,
   .card_img2,
   .card_img3,
@@ -902,30 +878,15 @@ footer a {
   .afficher {
     margin-left: 40px;
   }
-  .populaire_card2 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-  }
 
   figure.card2 {
-    display: flex;
     align-items: center;
-    border-radius: 15px 15px 0px 0px;
-    border-radius: 20px; /*CARDS  SIDE BAR*/
-    margin-bottom: 33px; /*Espacement entre CARDS */
-    font-size: 12px;
-    background-color: white;
     width: 90%;
-    padding: 5px;
-    box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
-    cursor: pointer;
   }
   .card2_img1,
   .card2_img2,
   .card2_img3 {
-    width: 40%; /*===========================Container images Aside=========================================*/
+    width: 47%; /*===========================Container images Aside=========================================*/
   }
   .card2_img1 img {
     border-radius: 15px 0px 0px 15px;
@@ -954,7 +915,7 @@ footer a {
   .container_text_star {
     display: flex;
     flex-direction: column;
-    width: 130px;
+    width: 133px;
 
     flex-wrap: wrap;
   }
@@ -966,7 +927,6 @@ footer a {
   }
   .card2 p {
     margin: 0.2em 0 0 0;
-    font-size: 1.6em;
   }
 
   .group_star {
@@ -1045,46 +1005,15 @@ footer a {
     width: 100%;
   }
 
-  header {
-    width: 100%;
-  }
-
   .hebergement {
-    display: flex;
     align-items: center;
     width: 100%;
     padding: 0px;
     justify-content: space-evenly;
   }
 
-  .hebergement_card {
-    width: 100%;
-  }
-
-  .tree_img {
-    display: flex;
-    width: 100%;
-    justify-content: center; /*=======================Container images Hébergement====================*/
-    margin-bottom: 30px;
-    justify-content: space-evenly;
-    height: 199px;
-  }
-
   figure {
     margin: 0;
-  }
-
-  figure.card {
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px; /*===================================vignette hebergement============================================*/
-    width: 28.9%;
-    height: 100%;
-    background-color: white;
-    box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE===============================================*/
-    align-items: center;
-    justify-items: center;
-    cursor: pointer;
   }
 
   .card_img1,
@@ -1161,37 +1090,25 @@ footer a {
   }
 
   aside {
-    display: flex;
     margin-left: 0px;
     width: 100%;
-    height: 876px;
+    height: 523px;
     padding: 0px;
     background-color: white;
   }
 
   .populaire_card2 {
-    display: flex;
-    flex-direction: column; /*==========================Container all cards aside===========================*/
-    width: 100%;
     height: 800px;
     /* justify-content: space-evenly; */
-  }
-
-  figure.card2 {
-    display: flex; /*================================Conatainer CARD Aside=====================================*/
-    width: 90%;
-    height: 30%;
-    cursor: pointer;
   }
 
   .card2_img1,
   .card2_img2,
   .card2_img3 {
-    display: flex;
-    width: 40%;
     height: 100%; /*===============================Container Images Aside======================================*/
     align-items: center;
     justify-content: center;
+    width: 32%;
   }
 
   /*==================================================Images Aside===================================================*/
@@ -1224,29 +1141,27 @@ footer a {
   }
 
   .container_text_star {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    margin-left: 100px;
+    margin-left: 100px; */
     width: 60%;
-    font-size: 10px;
+    /* font-size: 10px; */
   }
-  .card2 h2 {
+  /* .card2 h2 {
     font-size: 3em;
-    /* margin: 0.2em 0 0 0; */
-  }
-  .card2 p {
-    /* margin: 0.3em 0 0 0; */
-    font-size: 2.6em;
-  }
+    
+  } */
+  /* .card2 p {
+    
+    font-size: 2em;
+  } */
   .group_star {
     color: #0065fc; /*============================================================Container start Aside==================================================*/
     font-size: 13px;
-    padding-top: 100px;
+    /* padding-top: 100px; */
   }
 
   .group_chart {
-    display: flex;
-    justify-content: space-between;
     width: 88%;
   }
 
@@ -1285,35 +1200,27 @@ footer a {
     margin-bottom: 100px;
   }
   .activités {
-    display: flex;
     flex-direction: column;
-    width: 100%;
+
     height: 3076px; /*========================================================================Container Activités=================================================================*/
-    border-radius: 20px;
+
     justify-content: center;
-    align-items: center;
-    justify-content: space-evenly;
   }
   .double_picture {
-    display: flex;
-    flex-direction: column;
     width: 100%;
     height: 32%;
-    justify-content: space-between;
-    /* justify-content: center; */
+
     align-items: center;
     margin-bottom: 80px;
   }
 
   .activite_1 {
-    border: 1px solid lightgrey;
     border-radius: 20px 20px 20px 20px;
-    padding-bottom: 20px;
+
     font-size: 1em;
     width: 85%;
     height: 16%;
-    box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
-    cursor: pointer;
+
     margin-bottom: 40px;
   }
   .activite_1 img {
@@ -1324,16 +1231,9 @@ footer a {
   }
 
   .activite_2 {
-    border: 1px solid lightgrey;
-    border-radius: 20px 20px 20px 20px;
-
-    padding-bottom: 20px;
-    background-color: white;
     font-size: 1em;
     width: 85%;
     height: 50%;
-    box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
-    cursor: pointer;
     margin-bottom: 40px;
   }
   .activite_2 img {
@@ -1343,14 +1243,10 @@ footer a {
     object-fit: cover;
   }
   .activite_3 {
-    border: 1px solid lightgrey;
-    border-radius: 20px 20px 20px 20px;
-    padding-bottom: 20px;
     font-size: 1em;
     width: 85%;
     height: 50%;
-    box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
-    cursor: pointer;
+
     margin-bottom: 40px;
   }
   .activite_3 img {
@@ -1360,14 +1256,9 @@ footer a {
     object-fit: cover;
   }
   .activite_4 {
-    border: 1px solid lightgrey;
-    border-radius: 20px 20px 20px 20px;
-    padding-bottom: 20px;
     font-size: 1em;
     width: 85%;
     height: 16%;
-    box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
-    cursor: pointer;
     margin-bottom: 40px;
   }
   .activite_4 img {
@@ -1418,19 +1309,10 @@ footer a {
   }
 
   footer {
-    display: flex;
     height: 360px;
   }
 }
 @media screen and (max-width: 768px) {
-  body {
-    /* max-width: 768px; */
-  }
-  .bloc_page2 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
   .nav_hebergement_reservia {
     display: flex;
     width: 75%;
@@ -1451,7 +1333,6 @@ footer a {
     font-size: 1em;
   }
   .romantique {
-    /* width: 194px; */
     font-size: 1em;
   }
   .animaux {
@@ -1495,36 +1376,12 @@ footer a {
     padding: 0px;
     width: 100%;
   }
-  header {
-    width: 100%;
-  }
 
-  .hebergement {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: 0px;
-    justify-content: space-evenly;
-  }
-  .hebergement_card {
-    width: 100%;
-  }
   .tree_img {
     display: flex;
     width: 100%;
   }
-  figure.card {
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px; /*===================================vignette hebergement============================================*/
-    width: 28.9%;
-    height: 100%;
-    background-color: white;
-    box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE===============================================*/
-    align-items: center;
-    justify-items: center;
-    cursor: pointer;
-  }
+
   .card_img {
     display: flex;
     width: 100%;
@@ -1537,30 +1394,7 @@ footer a {
   }
 
   aside {
-    display: flex;
-    margin-left: 0px;
-    width: 100%;
-    padding: 0px;
-    background-color: white;
     margin-bottom: 40px;
-  }
-  .populaire_card2 {
-    display: flex;
-    flex-direction: column; /*==========================Container all cards aside===========================*/
-    width: 100%;
-  }
-  figure.card2 {
-    display: flex; /*================================Conatainer CARD Aside=====================================*/
-    width: 90%;
-    height: 30%;
-    cursor: pointer;
-  }
-  .card2_img1,
-  .card2_img2,
-  .card2_img3 {
-    /* display: flex; */
-    width: 40%;
-    /*height: 20px; ===============================Container Images Aside======================================*/
   }
 
   .card2_img1 img {
@@ -1606,13 +1440,8 @@ footer a {
     display: flex;
     flex-direction: column;
     margin-left: 100px;
-    width: 60%;
+    width: 100%;
     font-size: 10px;
-  }
-  .group_chart {
-    display: flex;
-    justify-content: space-between;
-    width: 88%;
   }
 
   .section_activite {
@@ -1637,36 +1466,11 @@ footer a {
     /* margin-bottom: 100px; */
   }
   .activités {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
     height: 3200px; /*========================================================================Container Activités=================================================================*/
-    border-radius: 20px;
-    justify-content: center;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  .double_picture {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 32%;
-    justify-content: space-between;
-    /* justify-content: center; */
-    align-items: center;
-    margin-bottom: 80px;
   }
 
   .activite_1 {
-    border: 1px solid lightgrey;
-    border-radius: 20px 20px 20px 20px;
-    padding-bottom: 20px;
-    font-size: 1em;
     width: 90%;
-    height: 16%;
-    box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
-    cursor: pointer;
-    /* margin-bottom: 40px; */
   }
   .activite_1 .gift {
     border-radius: 20px 20px 0px 0px;
@@ -1677,17 +1481,7 @@ footer a {
   }
 
   .activite_2 {
-    border: 1px solid lightgrey;
-    border-radius: 20px 20px 20px 20px;
-
-    padding-bottom: 20px;
-    background-color: white;
-    font-size: 1em;
     width: 90%;
-    height: 50%;
-    box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
-    cursor: pointer;
-    /* margin-bottom: 40px; */
   }
   .activite_2 img {
     border-radius: 20px 20px 0px 0px;
@@ -1696,15 +1490,7 @@ footer a {
     object-fit: cover;
   }
   .activite_3 {
-    border: 1px solid lightgrey;
-    border-radius: 20px 20px 20px 20px;
-    padding-bottom: 20px;
     font-size: 1em;
-    width: 90%;
-    height: 50%;
-    box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
-    cursor: pointer;
-    /* margin-bottom: 40px; */
   }
   .activite_3 img {
     border-radius: 20px 20px 0px 0px;
@@ -1713,15 +1499,8 @@ footer a {
     object-fit: cover;
   }
   .activite_4 {
-    border: 1px solid lightgrey;
-    border-radius: 20px 20px 20px 20px;
-    padding-bottom: 20px;
     font-size: 1em;
     width: 90%;
-    height: 16%;
-    box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
-    cursor: pointer;
-    /* margin-bottom: 40px; */
   }
   .activite_4 img {
     border-radius: 20px 20px 0px 0px;
@@ -1769,24 +1548,18 @@ footer a {
     text-align: center;
     height: 60px; /*==============================spacing between text and images================== */
   }
-  footer {
-    display: flex;
-    height: 360px;
-  }
 }
 @media all and (max-width: 708px) {
   .filter {
     margin-left: 5px;
-    width: 100%;
     height: 182px;
-    flex-wrap: wrap;
     align-content: space-around;
   }
-  .filter_container {
+  /* .filter_container {
     display: flex;
     flex-direction: column;
     height: 110px;
-  }
+  } */
   .animaux {
     /* width: 241px; */
     font-size: 1em;
@@ -1811,10 +1584,7 @@ footer a {
     font-size: 2em;
     /* margin: 0.2em 0 0 0; */
   }
-  .card2 p {
-    /* margin: 0.3em 0 0 0; */
-    font-size: 1.6em;
-  }
+
   .activités h2 {
     margin: 0px;
     font-size: 1.4em;
@@ -1822,6 +1592,35 @@ footer a {
   }
 }
 @media all and (max-width: 472px) {
+  .nav {
+    display: flex;
+    width: 100%;
+    height: 130px;
+    border-bottom: 1px solid #f2f2f2;
+  }
+  .nav_hebergement_reservia {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100px;
+    justify-content: space-between;
+  }
+  .logo_reservia {
+    align-self: flex-start;
+    margin-left: 10px;
+  }
+  .nav_inscrire_activite {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100px;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+  }
+  .inscrire {
+    align-self: flex-end;
+  }
+
   .lien_heber,
   .inscrire,
   .lien_activite {
@@ -1858,6 +1657,11 @@ footer a {
     /* align-items: center;
     justify-content: center; */
   }
+  .card2_img1,
+  .card2_img2,
+  .card2_img3 {
+    width: 64%;
+  }
   .container_hbgm_text_star h2 {
     margin: 0px;
     font-size: 1em;
@@ -1866,14 +1670,20 @@ footer a {
     font-size: 2em;
     /* margin: 0.2em 0 0 0; */
   }
-  .card2 p {
-    /* margin: 0.3em 0 0 0; */
-    font-size: 1.6em;
-  }
+
   .activités h2 {
     /* margin-left: 20px; */
     font-size: 1.4em;
     /* color: black; */
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+    height: 557px;
+  }
+  .footer_section {
+    width: 66%;
+    font-size: large;
   }
 }
 @media all and (max-width: 425px) {
@@ -1972,13 +1782,7 @@ footer a {
     text-align: center;
     font-size: 1em;
   }
-  .bloc_page2 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    /* height: 1301px; */
-    justify-content: center;
-  }
+
   /*===================================================Barre de Recherche=======================================================*/
   input {
     width: 70%;
@@ -2030,132 +1834,40 @@ footer a {
 
   /*=======================================================FILTER  BUTTON==============================================*/
   .filter {
-    margin-left: 5px;
     width: 90%;
     height: 235px;
-    flex-wrap: wrap;
-    align-content: space-around;
   }
   .filter ul {
     display: flex; /*========================================Container filter==========================================*/
     flex-direction: column;
     width: 95%;
   }
-  .filter .filter_title {
-    width: 80%;
-  }
 
-  .filter_container {
-    display: flex;
-    flex-direction: column;
-    height: 110px;
-  }
-
-  .filter ul li {
-    list-style-type: none;
-  }
-
-  .filter ul li a {
-    text-decoration: none;
-    color: black; /*couleur text des filtres*/
-  }
   .filter_title {
     width: 100%;
   }
 
-  .span_filter {
-    /*=======================================contour icones=============================================*/
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    width: 50px; /*circle icons flitres*/
-    border-radius: 30px;
-    background-color: #deebff;
-    /* margin-right: 13px; espacement icons and text */
-  }
-  filter p {
-    /*========================================================pargraphe filter========================================================*/
-    /* margin-left: 20px auto; */
-  }
-  .economique {
-    /* width: 166px; */
-    /* height: 50px;
-    text-align: center;
-    font-weight: bold;
-  }
-  .economique i {/*Icones filter*/
-    /* width: 18px;
-    height: 18px; 
-
-    color: #0065fc; */
-  }
-  .familial {
-    /* width: 130px; */
-    height: 50px;
-  }
-  .familial i {
-    /*Icons filter*/
-
-    /* width: 15px;
-    height: 21px; 
-    color: #0065fc; */
-  }
-  /* .romantique {
-    display: flex;
-    border: 1px solid #f2f2f2;
-    border-radius: 30px;
-    margin-right: 15px;
-    width: 184px;
-    height: 50px;
-    text-align: center;
-    font-weight: bold;
-  } */
-  .romantique i {
-    /*Icons romantique*/
-    /* width: 19px;
-    height: 19px; 
-
-    color: #0065fc; */
-  }
   .animaux {
     margin-left: 0px;
   }
-  .animaux i {
-    /*Icones filter*/
-    /* width: 18px;
-    height: 21px; 
 
-    color: #0065fc; */
-  }
-  .economique p,
-  .familial p,
-  .romantique p,
-  .animaux p {
-    /* margin: 10px; */
-    font-size: 1em;
-  }
   .info p {
     font-size: 0.9em;
     width: 96%;
   }
   /*=====================================================HEBERGEMENT==================================================*/
   .hebergement {
-    display: flex;
     flex-direction: column;
-    width: 100%;
+
     background-color: white;
-    justify-content: center;
   }
   .hebergement h2 {
     display: block;
     width: 90%;
   }
   .tree_img {
-    display: flex;
     flex-direction: column;
-    width: 100%; /*=================================Container all cards============================= */
+    /* width: 100%; =================================Container all cards============================= */
     align-items: center; /*======================centrage card hebergement=======================*/
     height: 700px;
     margin: 0px;
@@ -2163,7 +1875,6 @@ footer a {
   .hebergement_card {
     display: flex;
     flex-direction: column;
-    width: 100%;
   }
 
   figure.card {
@@ -2236,10 +1947,10 @@ footer a {
     font-size: 1.4em;
     margin: 0px;
   }
-  .container_hbgm_text_star p {
+  /* .container_hbgm_text_star p {
     font-size: 20px;
     margin: 0px;
-  }
+  } */
   .afficher {
     display: block;
     width: 82%;
@@ -2247,42 +1958,22 @@ footer a {
   }
   /*=================================================SIDE BAR=======================================================*/
   aside {
-    display: flex;
     order: -1;
-    width: 100%;
     height: 620px;
     border-radius: 0px;
     background-color: #f2f2f2;
   }
   .group_chart {
-    display: flex;
-    justify-content: space-between;
-    width: 88%;
     margin-left: 0px;
   }
-  .populaire_card2 {
-    /*======================container all  Cards side bar=========================*/
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
+
   figure.card2 {
-    display: flex;
-    flex-direction: row;
-    width: 90%;
     height: 144px; /*================================container card==================================*/
     justify-content: space-between;
-    box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
-    cursor: pointer;
+
     padding: 5px;
   }
-  .card2_img1,
-  .card2_img2,
-  .card2_img3 {
-    width: 30%;
-    height: 100%; /*===========================Container images Aside=========================================*/
-  }
+
   .card2_img1 img {
     border-radius: 15px 0px 0px 15px;
     width: 100%;
@@ -2315,9 +2006,7 @@ footer a {
     flex-wrap: wrap;
     margin-top: 0;
   }
-  .container_text p {
-    font-size: 20px;
-  }
+
   .container_text h2 {
     font-size: medium;
     margin: 0;
@@ -2349,12 +2038,7 @@ footer a {
 
     margin: 0;
   }
-  .card2 h2 {
-    /* display: flex; */
-    /* height: 24px; */
-    /* width: 100%; */
-    font-size: 2.3em;
-  }
+
   /*====================================================Activite================================================*/
 
   .section_activite {
@@ -2388,16 +2072,6 @@ footer a {
     justify-content: space-evenly;
     align-items: center;
   }
-  .double_picture {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 32%;
-    justify-content: space-between;
-    /* justify-content: center; */
-    align-items: center;
-    margin-bottom: 80px;
-  }
 
   .activite_1 {
     border: 1px solid lightgrey;
@@ -2417,16 +2091,7 @@ footer a {
   }
 
   .activite_2 {
-    border: 1px solid lightgrey;
-    border-radius: 20px 20px 20px 20px;
-
-    padding-bottom: 20px;
-    background-color: white;
     font-size: 10px;
-    width: 90%;
-    height: 50%;
-    box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
-    cursor: pointer;
   }
   .activite_2 img {
     border-radius: 20px 20px 0px 0px;
@@ -2435,14 +2100,7 @@ footer a {
     object-fit: cover;
   }
   .activite_3 {
-    border: 1px solid lightgrey;
-    border-radius: 20px 20px 20px 20px;
-    padding-bottom: 20px;
     font-size: 10px;
-    width: 90%;
-    height: 50%;
-    box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
-    cursor: pointer;
   }
   .activite_3 img {
     border-radius: 20px 20px 0px 0px;
@@ -2451,14 +2109,7 @@ footer a {
     object-fit: cover;
   }
   .activite_4 {
-    border: 1px solid lightgrey;
-    border-radius: 20px 20px 20px 20px;
-    padding-bottom: 20px;
     font-size: 10px;
-    width: 90%;
-    height: 16%;
-    box-shadow: 8px 8px 12px #aaa; /*================================OMBRAGE=======================*/
-    cursor: pointer;
   }
   .activite_4 img {
     border-radius: 20px 20px 0px 0px;
@@ -2516,7 +2167,6 @@ footer a {
   .familial p,
   .romantique p,
   .animaux p {
-    /* margin: 10px; */
     font-size: 0.9em;
   }
 }
@@ -2525,7 +2175,6 @@ footer a {
   .familial p,
   .romantique p,
   .animaux p {
-    /* margin: 10px; */
     font-size: 0.8em;
   }
 }
@@ -2534,7 +2183,6 @@ footer a {
   .familial p,
   .romantique p,
   .animaux p {
-    /* margin: 10px; */
     font-size: 0.6em;
   }
 }
@@ -2543,13 +2191,7 @@ footer a {
     text-align: center;
     font-size: 1.4em;
   }
-  .economique p,
-  .familial p,
-  .romantique p,
-  .animaux p {
-    /* margin: 10px; */
-    font-size: 0.6em;
-  }
+
   .economique,
   .familial,
   .romantique,
