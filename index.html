@@ -27,7 +27,7 @@
   <body>
     <div class="bloc_page">
       <header>
-        <!--navigation-->
+        <!-------------------------------navigation-------------------------------->
 
         <nav class="nav">
           <div class="nav_hebergement_reservia">
@@ -38,55 +38,64 @@
           </div>
 
           <div class="nav_inscrire_activite">
-            <a class="inscrire" href="">S'incrire</a>
             <a class="lien_activite" href="#activités">Activités</a>
+            <a class="inscrire" href="#">S'inscrire</a>
           </div>
         </nav>
-        <!--LOGO-->
+        <!-------------------------------------------LOGO-------------------------->
         <div class="text1_header">
           <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
           <p>En plein centre ville ou en pleine nature</p>
         </div>
 
-        <!--barre de recherche -->
+        <!-----------------------------barre de recherche--------------------------------->
         <div class="group_button1">
           <div class="group_button">
             <span><i class="fas fa-map-marker-alt"></i></span>
 
-            <input type="search" id="search" placeholder="Marseille, France" />
-            <button class="button" type="submit">
+            <input
+              type="search"
+              id="search-box"
+              placeholder="Marseille, France"
+            />
+            <label for="search-box">
+              <p class="rechercher">Rechercher</p>
+              <p class="search"><i class="fas fa-search"></i></p>
+            </label>
+
+            <!-- <button class="button" type="submit">
               <span>Rechercher </span>
               <i class="fas fa-search"></i>
-            </button>
+            </button> -->
           </div>
         </div>
 
-        <!--============================================================fitres============================================================================================================-->
+        <!--================================fitres============================================================================================================-->
         <div class="filter">
-          <a class="filter_title">Filtres</a>
+          <p class="filter_title">Filtres</p>
           <div class="filter_container">
-            <a class="economique" onclick="location.href='#';">
+            <div class="economique" >
               <span class="span_filter">
                 <i class="fas fa-money-bill-wave-alt"></i
               ></span>
-              <h3>Economique</h3>
-            </a>
+              <p>Economique</p>
+            </div>
 
-            <a class="familial" onclick="location.href='#';">
+            <div class="familial" >
               <span class="span_filter"> <i class="fa fa-child"></i></span>
-              <h3>Familial</h3>
-            </a>
+              <p>Familial</p>
+            </div>
           </div>
 
-          <a class="romantique" onclick="location.href='#';">
+          <div class="romantique" >
             <span class="span_filter"> <i class="fas fa-heart"></i></span>
-            <h3>Romantique</h3>
-          </a>
+            <p>Romantique</p>
+          </div>
 
-          <a class="animaux" onclick="location.href='#';">
+          <div class="animaux" >
             <span class="span_filter"> <i class="fas fa-dog"></i></span>
-            <h3>Animaux autorisés</h3>
-          </a>
+            <p>Animaux autorisés</p>
+          </div>
         </div>
 
         <div class="info">
@@ -109,11 +118,13 @@
 
           <div class="hebergement_card">
             <div class="tree_img">
-              <figure class="card" onclick="location.href='#';">
+              <figure class="card">
                 <div class="card_img1">
-                  <img
+                  <img srcset="images_small2/marcus-loke-WQJvWU_HZFo-unsplash236w.jpg ,
+                                   images_small2/marcus-loke-WQJvWU_HZFo-unsplash367w.jpg"
+                     sizes="(max-width:1440px)236px" 
                     src="images_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-                    alt=""
+                    alt="auberge la cannebière"
                   />
                 </div>
                 <!-- <div class="gift"></div> -->
@@ -133,11 +144,13 @@
                 </figcaption>
               </figure>
 
-              <figure class="card" onclick="location.href='#';">
+              <figure class="card">
                 <div class="card_img2">
-                  <img
+                  <img srcset="images_small2/fred-kleber-gTbaxaVLvsg-unsplash236w.jpg ,
+                                   images_small2/fred-kleber-gTbaxaVLvsg-unsplash367w.jpg"
+                     sizes="(max-width:1440px)236px" 
                     src="images_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-                    alt=""
+                    alt="hôtel du port"
                   />
                   <!-- <div class="gift"></div> -->
                 </div>
@@ -154,11 +167,13 @@
                 </figcaption>
               </figure>
 
-              <figure class="card" onclick="location.href='#';">
+              <figure class="card">
                 <div class="card_img3">
-                  <img
+                  <img srcset="images_small2/reisetopia-B8WIgxA_PFU-unsplash236w.jpg ,
+                                   images_small2/reisetopia-B8WIgxA_PFU-unsplash367w.jpg"
+                     sizes="(max-width:1440px)236px"
                     src="images_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
-                    alt=""
+                    alt="hôtel les mouettes"
                   />
                   <!-- <div class="gift"></div> -->
                 </div>
@@ -178,11 +193,13 @@
               </figure>
             </div>
             <div class="tree_img">
-              <figure class="card" onclick="location.href='#';">
+              <figure class="card">
                 <div class="card_img4">
-                  <img
+                  <img srcset="images_small2/annie-spratt-Eg1qcIitAuA-unsplash236w.jpg ,
+                                   images_small2/annie-spratt-Eg1qcIitAuA-unsplash367w.jpg"
+                     sizes="(max-width:1440px)236px"
                     src="images_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
-                    alt=""
+                    alt="hôtel de la mer"
                   />
                   <!-- <div class="gift"></div> -->
                 </div>
@@ -201,11 +218,13 @@
                 </figcaption>
               </figure>
 
-              <figure class="card" onclick="location.href='#';">
+              <figure class="card">
                 <div class="card_img5">
-                  <img
-                    src="images_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
-                    alt=""
+                  <img srcset="images_small2/nicate-lee-kT-ZyaiwBe0-unsplash236w.jpg ,
+                                   images_small2/nicate-lee-kT-ZyaiwBe0-unsplash367w.jpg"
+                     sizes="(max-width:1440px)236px"
+                    src="images_small2/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                    alt="auberge le panier"
                   />
                   <!-- <div class="gift"></div> -->
                 </div>
@@ -224,11 +243,13 @@
                 </figcaption>
               </figure>
 
-              <figure class="card" onclick="location.href='#';">
+              <figure class="card">
                 <div class="card_img6">
-                  <img
+                  <img srcset="images_small2/febrian-zakaria-M6S1WvfW68A-unsplash236w.jpg ,
+                                   images_small2/febrian-zakaria-M6S1WvfW68A-unsplash367w.jpg"
+                     sizes="(max-width:1440px)236px"
                     src="images_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
-                    alt=""
+                    alt="hôtel chez amina"
                   />
                   <!-- <div class="gift"></div> -->
                 </div>
@@ -256,89 +277,92 @@
         <aside>
           <div class="group_chart">
             <h2>Les plus populaires</h2>
-            <img src="images/chart-line-solid.svg" alt="" />
+            <img
+              src="images/chart-line-solid.svg"
+              alt="hôtel le soleil du matin"
+            />
           </div>
 
           <div class="populaire_card2">
-            <figure class="card2" onclick="location.href='#';">
+            <figure class="card2">
               <div class="card2_img1">
-                <img
+                <img srcset="images_small2/emile-guillemot-Bj_rcSC5XfE-unsplash119w.jpg ,
+                             images_small2/emile-guillemot-Bj_rcSC5XfE-unsplash267w.jpg"
+                     sizes="(max-width:1440px)267px"        
                   src="images_small1/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-                  alt=""
+                  alt="hôtel le soleil du matin"
                 />
                 <!-- <div class="gift"></div> -->
               </div>
 
               <figcaption class="container_text_star">
-                <a href="">
-                  <div class="container_text">
-                    <h2>Hôtel le soleil du matin</h2>
-                    <p>Nuit à partir de <strong> 128€</strong></p>
-                  </div>
-                  <div class="group_star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </div>
-                </a>
+                <div class="container_text">
+                  <h2>Hôtel le soleil du matin</h2>
+                  <p>Nuit à partir de <strong> 128€</strong></p>
+                </div>
+                <div class="group_star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
               </figcaption>
             </figure>
 
-            <figure class="card2" onclick="location.href='#';">
+            <figure class="card2">
               <div class="card2_img2">
-                <img
+                <img srcset="images_small2/aw-creative-VGs8z60yT2c-unsplash119w.jpg ,
+                             images_small2/aw-creative-VGs8z60yT2c-unsplash267w.jpg"
+                     sizes="(max-width:1440px)267px" 
                   src="images_small1/aw-creative-VGs8z60yT2c-unsplash.jpg"
-                  alt=""
+                  alt="Au coeur de l'eau chambres d'hôtes"
                 />
                 <!-- <div class="gift"></div> -->
               </div>
 
               <figcaption class="container_text_star">
-                <a href="">
-                  <div class="container_text">
-                    <h2>Au coeur de l'eau Chambres d'hôtes</h2>
-                    <p>Nuit à partir de <strong>71€</strong></p>
-                  </div>
-                  <div class="group_star">
+                <div class="container_text">
+                  <h2>Au coeur de l'eau Chambres d'hôtes</h2>
+                  <p>Nuit à partir de <strong>71€</strong></p>
+                </div>
+                <div class="group_star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span class="i">
                     <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <span class="i">
-                      <i class="fas fa-star"></i>
-                    </span>
-                  </div>
-                </a>
+                  </span>
+                </div>
               </figcaption>
             </figure>
 
-            <figure class="card2" onclick="location.href='#';">
+            <figure class="card2">
               <div class="card2_img3">
-                <img
+                <img srcset="images_small2/febrian-zakaria-sjvU0THccQA-unsplash119w.jpg ,
+                             images_small2/febrian-zakaria-sjvU0THccQA-unsplash267w.jpg"
+                     sizes="(max-width:1440px)267px" 
                   src="images_small1/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-                  alt=""
+                  alt="hôtel tout bleu et blanc"
                 />
                 <!-- <div class="gift"></div> -->
               </div>
 
               <figcaption class="container_text_star">
-                <a href="">
-                  <div class="container_text">
-                    <h2>Hôtel Tout bleu et Blanc</h2>
-                    <p>Nuit à partir de <strong>68€</strong></p>
-                  </div>
-                  <div class="group_star">
+                <div class="container_text">
+                  <h2>Hôtel Tout bleu et Blanc</h2>
+                  <p>Nuit à partir de <strong>68€</strong></p>
+                </div>
+                <div class="group_star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span class="i">
                     <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <span class="i">
-                      <i class="fas fa-star"></i>
-                    </span>
-                  </div>
-                </a>
+                  </span>
+                </div>
               </figcaption>
             </figure>
           </div>
@@ -351,10 +375,10 @@
         <h2 class="title_activite" id="activités">Activités à Marseille</h2>
 
         <div class="activités">
-          <figure class="activite_1" onclick="location.href='#';">
+          <figure class="activite_1">
             <img
               src="images_small1/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-              alt=""
+              alt="vieux port"
             />
             <!-- <div class="gift"></div> -->
             <figcaption class="text_activite">
@@ -363,10 +387,10 @@
           </figure>
 
           <div class="double_picture">
-            <figure class="activite_2" onclick="location.href='#';">
+            <figure class="activite_2">
               <img
                 src="images_small1/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-                alt=""
+                alt="Fort de promègues"
               />
               <!-- <div class="gift"></div> -->
 
@@ -375,10 +399,10 @@
               </figcaption>
             </figure>
 
-            <figure class="activite_3" onclick="location.href='#';">
+            <figure class="activite_3">
               <img
                 src="images_small1/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-                alt=""
+                alt="Iles de frioul"
               />
               <!-- <div class="gift"></div> -->
 
@@ -388,10 +412,10 @@
             </figure>
           </div>
 
-          <figure class="activite_4" onclick="location.href='#';">
+          <figure class="activite_4">
             <img
               src="images_small1/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-              alt=""
+              alt="park national des calanques"
             />
             <!-- <div class="gift"></div> -->
             <figcaption class="text_activite">
@@ -400,10 +424,10 @@
           </figure>
 
           <div class="double_picture">
-            <figure class="activite_5" onclick="location.href='#';">
+            <figure class="activite_5">
               <img
                 src="images_small1/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                alt=""
+                alt="notre-dame-de-la-garde"
               />
               <!-- <div class="gift"></div> -->
 
@@ -412,10 +436,10 @@
               </figcaption>
             </figure>
 
-            <figure class="activite_6" onclick="location.href='#';">
+            <figure class="activite_6">
               <img
                 src="images_small1/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-                alt=""
+                alt="park longchamp"
               />
               <!-- <div class="gift"></div> -->
               <figcaption class="text_activite">
@@ -431,25 +455,25 @@
     <footer>
       <section class="footer_section">
         <h3>
-          <a href=""> <strong> A propos</strong> </a>
+           <strong> A propos</strong> 
         </h3>
-        <h3><a href="">Fonctionnement du site</a></h3>
-        <h3><a href="">Conditions générales de vente</a></h3>
-        <h3><a href="">Données et confidentialité</a></h3>
+        <p>Fonctionnement du site</p>
+        <p>Conditions générales de vente</p>
+        <p>Données et confidentialité</p>
       </section>
       <section class="footer_section">
         <h3>
-          <a href="#"><strong>Nos hébergements</strong></a>
+          <strong>Nos hébergements</strong>
         </h3>
-        <h3><a href="#"> Charte qualité</a></h3>
-        <h3><a href="#"> Soumettre votre hôtel</a></h3>
+        <p> Charte qualité</p>
+        <p> Soumettre votre hôtel</a></p>
       </section>
       <section class="footer_section">
         <h3>
-          <a href=""><strong>Assistance</strong> </a>
+          <strong>Assistance</strong> 
         </h3>
-        <h3><a href="">Centre d'aide</a></h3>
-        <h3><a href="">Nous contacter</a></h3>
+        <p>Centre d'aide</p>
+        <p>Nous contacter</p>
       </section>
     </footer>
   </body>
